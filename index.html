@@ -521,6 +521,17 @@
       background-clip: text;
     }
 
+    .price-row {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .price-row .price-hero {
+      margin-bottom: 0;
+    }
+
     .build-features {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1185,7 +1196,7 @@
       <li><a href="#ads">Ad Services</a></li>
       <li><a href="#marketplace">3rd Party</a></li>
     </ul>
-    <a href="mailto:info@brandexpand.digital" class="nav-cta">Contact</a>
+    <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a>
     <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
       <span></span>
       <span></span>
@@ -1200,7 +1211,7 @@
     <a href="#plans" class="mobile-link">Plans</a>
     <a href="#ads" class="mobile-link">Ad Services</a>
     <a href="#marketplace" class="mobile-link">3rd Party</a>
-    <a href="mailto:info@brandexpand.digital" class="mobile-link" style="color: var(--accent); font-weight: 600;">Contact</a>
+    <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="mobile-link" style="color: var(--accent); font-weight: 600;">Contact</a>
   </div>
 
   <!-- BACK TO TOP -->
@@ -1238,9 +1249,11 @@
     <div class="container">
       <p class="section-label fade-in">Website Build & Redesign</p>
       <h2 class="section-title fade-in" style="color: var(--white);">Your Website, Built Right.</h2>
-      <p class="price-hero fade-in">$2,495 to $9,995</p>
+      <div class="price-row">
+        <p class="price-hero fade-in">$2,495 to $9,995</p>
+        <a href="https://brandexpand.agencyhandy.com/public-forms/6933115fd29c2febf8b5c037" class="hero-cta fade-in">Get a Custom Quote</a>
+      </div>
       <p class="section-desc fade-in">Whether you need a brand new site or a complete refresh, we build WordPress and Shopify sites that convert visitors into customers.</p>
-      <a href="#" class="hero-cta fade-in" id="website-quote-btn">Get a Custom Quote</a>
       
       <div class="build-features">
         <div class="build-feature fade-in">
@@ -1426,7 +1439,7 @@
         </div>
       </div>
 
-      <a href="mailto:info@brandexpand.digital" class="marketplace-cta fade-in">Schedule a Call</a>
+      <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="marketplace-cta fade-in">Schedule a Call</a>
     </div>
   </section>
 
@@ -1476,7 +1489,7 @@
     <div class="container">
       <h2 class="section-title fade-in">Not Sure What You Need?</h2>
       <p class="section-desc fade-in">Let's talk. Schedule a free call and we'll figure out the best path forward for your brand.</p>
-      <a href="mailto:info@brandexpand.digital" class="cta-btn fade-in">Schedule a Free Call</a>
+      <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="cta-btn fade-in">Schedule a Free Call</a>
     </div>
   </section>
 
@@ -1504,14 +1517,4 @@
     const mobileMenu = document.getElementById('mobileMenu');
 
     mobileMenuBtn.addEventListener('click', () => {
-      mobileMenuBtn.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-    });
-
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('.mobile-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenuBtn.classList.remove('active');
-        mobileMenu.classList.remove('active');
- 
+      mobileM
