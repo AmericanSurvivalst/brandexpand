@@ -365,7 +365,7 @@
     }
 
     .audit-content {
-      max-width: 800px;
+      max-width: 700px;
       margin: 0 auto;
       text-align: center;
     }
@@ -375,10 +375,10 @@
     }
 
     .audit-features-inline {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 1.5rem 3rem;
+      gap: 1rem 3rem;
       margin-bottom: 2.5rem;
     }
 
@@ -387,6 +387,7 @@
       align-items: center;
       gap: 0.5rem;
       font-size: 1rem;
+      white-space: nowrap;
     }
 
     .audit-feature-item::before {
@@ -402,10 +403,11 @@
       display: inline-block;
       text-decoration: none;
       text-align: center;
-      padding: 1.25rem 3rem;
+      padding: 1rem 2.5rem;
       font-size: 1rem;
       background: var(--accent);
       border-radius: 10px;
+      color: var(--white);
       width: auto;
     }
 
@@ -415,10 +417,9 @@
     }
 
     .btn-primary {
-      width: 100%;
       background: var(--accent);
       color: var(--white);
-      padding: 1.25rem 2rem;
+      padding: 1rem 2rem;
       border: none;
       font-family: inherit;
       font-weight: 600;
@@ -426,6 +427,8 @@
       cursor: pointer;
       border-radius: 8px;
       transition: all 0.3s;
+      display: inline-block;
+      width: auto;
     }
 
     .btn-primary:hover {
