@@ -369,9 +369,13 @@
     }
 
     .audit-content {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       text-align: center;
+    }
+
+    .audit-content .section-title {
+      white-space: nowrap;
     }
 
     .audit-content .section-desc {
@@ -1395,6 +1399,4 @@
       });
     }, observerOptions);
 
-    document.querySelectorAll('.fade-in').forEach(el => {
-      observer.observe(el);
-   
+    document.query
