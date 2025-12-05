@@ -1,452 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brand Expand helps businesses grow through professional website development, SEO optimization, digital advertising, and marketplace expansion on Amazon, Walmart, and Target.">
-    <meta name="keywords" content="website design, SEO, digital marketing, Amazon expansion, Walmart marketplace, e-commerce consulting">
-    <meta name="author" content="Brand Expand">
+background-clip: text;
+}
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Brand Expand - We Help Your Brand Expand">
-    <meta property="og:description" content="Professional website builds, SEO optimization, digital advertising, and marketplace expansion services.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://brandexpand.com">
-
-    <title>Brand Expand - We Help Your Brand Expand | Web Design & Digital Marketing</title>
-
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Brand Expand",
-        "description": "Professional web design, SEO, and digital marketing services",
-        "url": "https://brandexpand.com",
-        "priceRange": "$349-$1199",
-        "areaServed": "US",
-        "serviceType": ["Web Design", "SEO", "Digital Marketing", "E-commerce Consulting"]
+    .price-row {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    .website-quote-link {
+      margin-top: 3rem;
+      font-size: 1.125rem;
+      color: rgba(255,255,255,0.8);
     }
-    </script>
-</head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loader"></div>
-    </div>
 
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress"></div>
+    .website-quote-link a {
+      color: var(--white);
+      text-decoration: underline;
+      font-weight: 600;
+      transition: opacity 0.2s;
+}
 
-    <!-- Custom Cursor -->
-    <div class="custom-cursor"></div>
+    .price-row .price-hero {
+      margin-bottom: 0;
+    .website-quote-link a:hover {
+      opacity: 0.8;
+}
 
-    <!-- Page Transition -->
-    <div class="page-transition"></div>
+.build-features {
+@@ -1249,12 +1255,9 @@ <h2 class="section-title">Not Sure Where to Start? We'll Show You.</h2>
+<div class="container">
+<p class="section-label fade-in">Website Build & Redesign</p>
+<h2 class="section-title fade-in" style="color: var(--white);">Your Website, Built Right.</h2>
+      <div class="price-row">
+        <p class="price-hero fade-in">$2,495 to $9,995</p>
+        <a href="https://brandexpand.agencyhandy.com/public-forms/6933115fd29c2febf8b5c037" class="hero-cta fade-in">Get a Custom Quote</a>
+      </div>
+      <p class="price-hero fade-in">$2,495 to $9,995</p>
+<p class="section-desc fade-in">Whether you need a brand new site or a complete refresh, we build WordPress and Shopify sites that convert visitors into customers.</p>
+      
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="logo">
-                    <span class="logo-text">Brand<span class="logo-highlight">Expand</span></span>
-                </a>
+<div class="build-features">
+<div class="build-feature fade-in">
+<h3>WordPress or Shopify</h3>
+@@ -1281,6 +1284,7 @@ <h3>30-Day Guarantee</h3>
+<p>Money back if you're not completely satisfied.</p>
+</div>
+</div>
+      <p class="website-quote-link fade-in">Ready to get started? <a href="https://brandexpand.agencyhandy.com/public-forms/6933115fd29c2febf8b5c037">Get a Custom Quote</a></p>
+</div>
+</section>
 
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+@@ -1513,8 +1517,4 @@ <h2 class="section-title fade-in">Not Sure What You Need?</h2>
+});
 
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li><a href="https://client.brandexpand.digital/sign-in" class="nav-link">Client Login</a></li>
-                    <li><a href="contact.html" class="btn btn-primary btn-nav">Get Started</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+// Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    We Help Your<br>
-                    <span class="gradient-text">Brand Expand</span>
-                </h1>
-                <p class="hero-subtitle" data-typing="Transform your business with premium web design, proven SEO strategies, and powerful marketplace expansion." data-typing-speed="40">
-                </p>
-                <div class="hero-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-large">Start Your Expansion</a>
-                    <a href="services.html" class="btn btn-secondary btn-large">Explore Services</a>
-                </div>
-
-                <!-- Trust Indicators -->
-                <div class="trust-indicators">
-                    <div class="trust-item">
-                        <i class="fas fa-star"></i>
-                        <span>5-Star Rated</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>100+ Projects</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Fast Delivery</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <span>Scroll to explore</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Services Overview Section -->
-    <section class="services-overview section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title blur-reveal">Our Core Services</h2>
-                <p class="section-subtitle blur-reveal" data-word-reveal>Comprehensive solutions to expand your digital presence</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card fade-in-up stagger-1">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Website Design & Development</h3>
-                    <p>Custom websites and redesigns that convert visitors into customers. Modern, fast, and mobile-responsive.</p>
-                    <a href="services.html#web-design" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card fade-in-up stagger-2">
-                    <div class="service-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>Organic SEO Optimization</h3>
-                    <p>Rank higher on Google and drive organic traffic with proven SEO strategies and content marketing.</p>
-                    <a href="services.html#seo" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3>Google & Meta Advertising</h3>
-                    <p>Targeted ad campaigns that deliver ROI. Expert management of Google Ads and Meta platforms.</p>
-                    <a href="services.html#advertising" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <h3>Marketplace Expansion</h3>
-                    <p>Grow on Amazon, Walmart, and Target. From setup to optimization, we handle everything.</p>
-                    <a href="services.html#marketplace" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Marketing Consulting</h3>
-                    <p>Strategic guidance to scale your business. Data-driven insights and actionable strategies.</p>
-                    <a href="services.html#consulting" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Wholesale Consulting</h3>
-                    <p>Expand into wholesale channels with expert guidance on partnerships and distribution.</p>
-                    <a href="services.html#wholesale" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process-section section-padding bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">How We Work</h2>
-                <p class="section-subtitle">A proven process that delivers results</p>
-            </div>
-
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">01</div>
-                    <h3>Discovery & Strategy</h3>
-                    <p>We learn about your business, goals, and target audience to create a custom growth strategy.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">02</div>
-                    <h3>Design & Development</h3>
-                    <p>Our team builds your solution with attention to detail, modern design, and best practices.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">03</div>
-                    <h3>Launch & Optimize</h3>
-                    <p>We launch your project and continuously optimize for better performance and results.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">04</div>
-                    <h3>Grow & Scale</h3>
-                    <p>Ongoing support and strategic guidance to help your business expand and thrive.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Preview Section -->
-    <section class="pricing-preview section-padding">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Transparent Pricing</h2>
-                <p class="section-subtitle">Choose the package that fits your growth goals</p>
-            </div>
-
-            <div class="pricing-preview-grid">
-                <div class="pricing-preview-card">
-                    <div class="price-tag">$349</div>
-                    <h3>Essentials</h3>
-                    <p>Perfect for small businesses getting started online</p>
-                    <a href="pricing.html" class="btn btn-outline">View Details</a>
-                </div>
-
-                <div class="pricing-preview-card featured">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="price-tag">$649</div>
-                    <h3>Growth</h3>
-                    <p>Ideal for businesses ready to scale their presence</p>
-                    <a href="pricing.html" class="btn btn-primary">View Details</a>
-                </div>
-
-                <div class="pricing-preview-card">
-                    <div class="price-tag">$1,199</div>
-                    <h3>Premium</h3>
-                    <p>Complete growth solution for ambitious brands</p>
-                    <a href="pricing.html" class="btn btn-outline">View Details</a>
-                </div>
-            </div>
-
-            <div class="pricing-note">
-                <p>Need a new website? Custom builds start at $1,500 with flexible payment options.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof Section -->
-    <section class="social-proof section-padding bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Businesses Choose Brand Expand</h2>
-            </div>
-
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Projects Delivered</div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-number">95%</div>
-                    <div class="stat-label">Client Satisfaction</div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-number">3x</div>
-                    <div class="stat-label">Average ROI</div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Support Available</div>
-                </div>
-            </div>
-
-            <!-- Testimonials -->
-            <div class="testimonials">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Brand Expand transformed our online presence. Our website traffic increased by 200% in just 3 months, and we're finally ranking on the first page of Google."</p>
-                    <div class="testimonial-author">
-                        <strong>Sarah Johnson</strong>
-                        <span>CEO, Boutique Fashion Co.</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"The team helped us expand to Amazon and Walmart. Sales have tripled, and their ongoing support has been invaluable. Best investment we've made."</p>
-                    <div class="testimonial-author">
-                        <strong>Michael Chen</strong>
-                        <span>Founder, Home Goods Plus</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Professional, responsive, and results-driven. Our new website looks amazing and our Google Ads campaigns are finally profitable. Highly recommend!"</p>
-                    <div class="testimonial-author">
-                        <strong>Emily Rodriguez</strong>
-                        <span>Marketing Director, TechStart Inc.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section section-padding">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Expand Your Brand?</h2>
-                <p>Let's discuss how we can help your business grow. Schedule a free consultation today.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-large">Get Started Today</a>
-                    <a href="pricing.html" class="btn btn-secondary btn-large">View Pricing</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section section-padding bg-light">
-        <div class="container">
-            <div class="newsletter-content">
-                <h3>Get Growth Tips & Industry Insights</h3>
-                <p>Subscribe to our newsletter for exclusive digital marketing strategies and business growth tips.</p>
-                <form class="newsletter-form" id="newsletterForm">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-                <p class="newsletter-note">Join 500+ business owners receiving our weekly insights. Unsubscribe anytime.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Brand<span class="logo-highlight">Expand</span></h4>
-                    <p>Helping businesses grow through premium web design, SEO, digital advertising, and marketplace expansion.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h5>Services</h5>
-                    <ul>
-                        <li><a href="services.html#web-design">Website Design</a></li>
-                        <li><a href="services.html#seo">SEO Optimization</a></li>
-                        <li><a href="services.html#advertising">Digital Advertising</a></li>
-                        <li><a href="services.html#marketplace">Marketplace Expansion</a></li>
-                        <li><a href="services.html#consulting">Business Consulting</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h5>Company</h5>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h5>For Clients</h5>
-                    <ul>
-                        <li><a href="https://client.brandexpand.digital/sign-in">Client Login</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h5>Get In Touch</h5>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-envelope"></i> info@brandexpand.com</li>
-                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
-                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM EST</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2024 Brand Expand. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-
-    <!-- Google Analytics Placeholder -->
-    <!-- Replace YOUR_GA_ID with your actual Google Analytics ID -->
-    <!--
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'YOUR_GA_ID');
-    </script>
-    -->
-</body>
-</html>
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileM
+    const mobileMenuBtn = document.getElementById
