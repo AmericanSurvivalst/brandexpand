@@ -4,1178 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brand Expand | We Help Brands Grow Online</title>
-  
-  <!-- SEO Meta Tags -->
   <meta name="description" content="Brand Expand helps businesses grow online with websites, SEO, social media, and paid advertising.">
   <meta name="keywords" content="digital marketing, web design, SEO, social media marketing, paid ads, website development">
   <meta name="author" content="Brand Expand">
-  
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Brand Expand | We Help Brands Grow Online">
   <meta property="og:description" content="Websites, content, social, ads, and marketplace management for growing brands.">
   <meta property="og:image" content="https://brandexpand.digital/og-image.jpg">
   <meta property="og:url" content="https://brandexpand.digital">
-  
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Brand Expand | We Help Brands Grow Online">
   <meta name="twitter:description" content="Websites, content, social, ads, and marketplace management for growing brands.">
   <meta name="twitter:image" content="https://brandexpand.digital/og-image.jpg">
-  
-  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Brand Expand",
-    "description": "Digital marketing agency specializing in websites, SEO, social media, and paid advertising.",
-    "url": "https://brandexpand.digital",
-    "email": "info@brandexpand.digital",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Framingham",
-      "addressRegion": "MA",
-      "addressCountry": "US"
-    },
-    "sameAs": []
-  }
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Brand Expand","description":"Digital marketing agency specializing in websites, SEO, social media, and paid advertising.","url":"https://brandexpand.digital","email":"info@brandexpand.digital","address":{"@type":"PostalAddress","addressLocality":"Framingham","addressRegion":"MA","addressCountry":"US"},"sameAs":[]}
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --black: #1a1a2e;
-      --white: #fefefe;
-      --grey-100: #f8f9fa;
-      --grey-200: #e9ecef;
-      --grey-300: #dee2e6;
-      --grey-400: #adb5bd;
-      --grey-500: #6c757d;
-      --grey-600: #495057;
-      --grey-700: #404040;
-      --grey-800: #2d2d44;
-      --grey-900: #171717;
-      --accent: #4f46e5;
-      --accent-hover: #4338ca;
-      --accent-light: #eef2ff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background-color: var(--white);
-      color: var(--black);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-
-    /* NAVIGATION */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      background: rgba(254,254,254,0.95);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--grey-200);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-family: 'Inter', sans-serif;
-      font-weight: 800;
-      font-size: 1.25rem;
-      letter-spacing: -0.02em;
-      color: var(--black);
-      text-decoration: none;
-    }
-
-    .logo:hover {
-      opacity: 0.8;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--black);
-      font-size: 0.875rem;
-      font-weight: 500;
-      transition: opacity 0.2s;
-    }
-
-    .nav-links a:hover {
-      opacity: 0.6;
-    }
-
-    .nav-cta {
-      background: var(--accent);
-      color: var(--white);
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.875rem;
-      border-radius: 8px;
-      transition: all 0.3s;
-    }
-
-    .nav-cta:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-    }
-
-    /* Mobile menu button */
-    .mobile-menu-btn {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem;
-      z-index: 1001;
-    }
-
-    .mobile-menu-btn span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--black);
-      margin: 5px 0;
-      transition: all 0.3s;
-    }
-
-    .mobile-menu-btn.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .mobile-menu-btn.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .mobile-menu-btn.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-
-    /* Mobile menu overlay */
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--white);
-      z-index: 999;
-      padding: 6rem 2rem 2rem;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-    }
-
-    .mobile-menu.active {
-      display: flex;
-    }
-
-    .mobile-menu a {
-      font-size: 1.25rem;
-      color: var(--black);
-      text-decoration: none;
-      font-weight: 500;
-      padding: 0.75rem 1.5rem;
-    }
-
-    .mobile-menu a:hover {
-      color: var(--accent);
-    }
-
-    .sticky-email {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      background: var(--accent);
-      color: var(--white);
-      padding: 1rem 1.5rem;
-      text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 500;
-      z-index: 999;
-      border-radius: 10px;
-      transition: all 0.3s;
-      box-shadow: 0 4px 20px rgba(79,70,229,0.3);
-    }
-
-    .sticky-email:hover {
-      background: var(--accent-hover);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 30px rgba(79,70,229,0.4);
-    }
-
-    .back-to-top {
-      position: fixed;
-      bottom: 2rem;
-      left: 2rem;
-      background: var(--white);
-      color: var(--black);
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 1.25rem;
-      z-index: 999;
-      transition: all 0.3s;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      border: 1px solid var(--grey-200);
-      opacity: 1;
-    }
-
-    .back-to-top:hover {
-      background: var(--grey-100);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
-
-    /* HERO */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 8rem 2rem 4rem;
-      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
-      color: var(--white);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: 
-        radial-gradient(circle at 20% 80%, rgba(79,70,229,0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(79,70,229,0.1) 0%, transparent 50%);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 900px;
-    }
-
-    .hero h1 {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(2.5rem, 8vw, 5rem);
-      font-weight: 800;
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-      margin-bottom: 1.5rem;
-      animation: fadeUp 0.8s ease-out;
-    }
-
-    .hero-sub {
-      font-size: clamp(0.875rem, 2vw, 1.125rem);
-      color: var(--white);
-      margin-bottom: 3rem;
-      letter-spacing: 0.1em;
-      animation: fadeUp 0.8s ease-out 0.2s both;
-      opacity: 0.7;
-    }
-
-    .hero-cta {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--white);
-      padding: 1.25rem 3rem;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: all 0.3s;
-      animation: fadeUp 0.8s ease-out 0.4s both;
-    }
-
-    .hero-cta:hover {
-      background: var(--accent-hover);
-      transform: translateY(-3px);
-      box-shadow: 0 10px 40px rgba(79,70,229,0.4);
-    }
-
-    .trusted-by {
-      position: absolute;
-      bottom: 3rem;
-      left: 0;
-      right: 0;
-      text-align: center;
-      z-index: 1;
-    }
-
-    .trusted-label {
-      font-family: 'Space Mono', monospace;
-      font-size: 0.7rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      opacity: 0.5;
-      margin-bottom: 1rem;
-    }
-
-    .trusted-logos {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
-      flex-wrap: wrap;
-    }
-
-    .trusted-logo {
-      font-weight: 700;
-      font-size: 1.125rem;
-      opacity: 0.4;
-      letter-spacing: 0.05em;
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 6rem 2rem;
-      background: var(--white);
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .section-label {
-      font-size: 0.875rem;
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-
-    .section-title {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(1.75rem, 5vw, 3rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-      margin-bottom: 1.25rem;
-      color: var(--black);
-    }
-
-    .section-desc {
-      font-size: 1.125rem;
-      color: var(--black);
-      max-width: 600px;
-      margin-bottom: 3rem;
-    }
-
-    /* FREE AUDIT */
-    .audit {
-      background: var(--grey-100);
-      border-top: none;
-      border-bottom: none;
-    }
-
-    .audit-content {
-      max-width: 1000px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .audit-content .section-title {
-      white-space: nowrap;
-    }
-
-    .audit-content .section-desc {
-      margin: 0 auto 2.5rem;
-      max-width: 700px;
-    }
-
-    .audit-features-inline {
-      display: flex;
-      justify-content: center;
-      gap: 2.5rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .audit-feature-item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 1rem;
-      white-space: nowrap;
-    }
-
-    .audit-feature-item::before {
-      content: '✓';
-      width: auto;
-      height: auto;
-      background: none;
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    .audit-btn {
-      display: inline-block;
-      text-decoration: none;
-      text-align: center;
-      padding: 1rem 2.5rem;
-      font-size: 1rem;
-      background: var(--accent);
-      border-radius: 10px;
-      color: var(--white);
-      width: auto;
-    }
-
-    .audit-btn:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: var(--white);
-      padding: 1rem 2rem;
-      border: none;
-      font-family: inherit;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: all 0.3s;
-      display: inline-block;
-      width: auto;
-    }
-
-    .btn-primary:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-    }
-
-    /* WEBSITE BUILD */
-    .website-build {
-      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
-      color: var(--white);
-    }
-
-    .website-build .section-label {
-      color: rgba(255,255,255,0.6);
-    }
-
-    .website-build .section-title {
-      color: var(--white);
-    }
-
-    .website-build .section-desc {
-      color: rgba(255,255,255,0.8);
-    }
-
-    .price-hero {
-      font-family: 'Inter', sans-serif;
-      font-size: clamp(2.5rem, 8vw, 4.5rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      margin-bottom: 2rem;
-      background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.8) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .build-features {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 4rem;
-    }
-
-    .build-feature {
-      padding: 2rem;
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.05);
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-
-    .build-feature:hover {
-      border-color: rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.12);
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3), 0 0 20px rgba(79,70,229,0.2);
-    }
-
-    .build-feature h3 {
-      font-size: 1.125rem;
-      margin-bottom: 0.75rem;
-      font-weight: 600;
-    }
-
-    .build-feature p {
-      color: rgba(255,255,255,0.7);
-      font-size: 0.9375rem;
-      line-height: 1.5;
-    }
-
-    /* MONTHLY PLANS */
-    .plans {
-      background: var(--white);
-    }
-
-    .plans-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .plan-card {
-      background: var(--white);
-      padding: 2.5rem 2rem;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid var(--grey-300);
-      border-radius: 16px;
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    }
-
-    .plan-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-8px);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.15), 0 0 30px rgba(79,70,229,0.1);
-      background: linear-gradient(180deg, var(--white) 0%, var(--accent-light) 100%);
-    }
-
-    .plan-card.featured {
-      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
-      color: var(--white);
-      border: 1px solid transparent;
-      box-shadow: 0 10px 40px rgba(26,26,46,0.25);
-    }
-
-    .plan-card.featured:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 25px 60px rgba(26,26,46,0.4), 0 0 40px rgba(79,70,229,0.2);
-      background: linear-gradient(135deg, #222240 0%, #3d3d6a 100%);
-    }
-
-    .plan-name {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-
-    .plan-card.featured .plan-name {
-      color: rgba(255,255,255,0.8);
-    }
-
-    .plan-price {
-      font-family: 'Inter', sans-serif;
-      font-size: 2.75rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.25rem;
-    }
-
-    .plan-period {
-      color: var(--accent);
-      font-size: 0.875rem;
-      margin-bottom: 2rem;
-    }
-
-    .plan-card.featured .plan-period {
-      color: rgba(255,255,255,0.8);
-    }
-
-    .plan-features {
-      list-style: none;
-      flex-grow: 1;
-      margin-bottom: 2rem;
-    }
-
-    .plan-features li {
-      padding: 0.75rem 0;
-      border-bottom: 1px solid var(--grey-200);
-      font-size: 0.9375rem;
-      color: var(--grey-600);
-    }
-
-    .plan-card.featured .plan-features li {
-      border-color: rgba(255,255,255,0.15);
-      color: rgba(255,255,255,0.8);
-    }
-
-    .plan-cta {
-      display: block;
-      text-align: center;
-      padding: 1rem;
-      background: var(--accent);
-      color: var(--white);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.875rem;
-      border-radius: 8px;
-      transition: all 0.3s;
-    }
-
-    .plan-cta:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-    }
-
-    .plan-card.featured .plan-cta {
-      background: var(--white);
-      color: var(--black);
-    }
-
-    .plan-card.featured .plan-cta:hover {
-      background: var(--grey-100);
-    }
-
-    /* AD MANAGEMENT */
-    .ads {
-      background: var(--grey-100);
-      border-top: none;
-      border-bottom: none;
-    }
-
-    .ads-table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      margin-top: 3rem;
-      background: var(--white);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    }
-
-    .ads-table th,
-    .ads-table td {
-      padding: 1.5rem 2rem;
-      text-align: left;
-      border-bottom: 1px solid var(--grey-200);
-    }
-
-    .ads-table th {
-      background: var(--black);
-      color: var(--white);
-      font-weight: 600;
-      font-size: 0.875rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .ads-table td {
-      font-size: 1.125rem;
-    }
-
-    .ads-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .ads-table tr:hover td {
-      background: var(--grey-100);
-    }
-
-    .fee-highlight {
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--accent);
-    }
-
-    .ads-extras {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .ads-extra-item {
-      background: var(--white);
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.08);
-      transition: all 0.3s ease;
-      border: 1px solid transparent;
-    }
-
-    .ads-extra-item:hover {
-      box-shadow: 0 15px 40px rgba(0,0,0,0.12), 0 0 20px rgba(79,70,229,0.08);
-      transform: translateY(-6px);
-      border-color: var(--accent-light);
-      background: linear-gradient(180deg, var(--white) 0%, var(--accent-light) 100%);
-    }
-
-    .ads-extra-item h4 {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--black);
-    }
-
-    .ads-extra-item p {
-      font-size: 0.875rem;
-      color: var(--grey-600);
-      line-height: 1.5;
-    }
-
-    /* MARKETPLACE */
-    .marketplace {
-      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
-      color: var(--white);
-    }
-
-    .marketplace .section-label {
-      color: rgba(255,255,255,0.6);
-    }
-
-    .marketplace .section-title {
-      color: var(--white);
-    }
-
-    .marketplace .section-desc {
-      color: rgba(255,255,255,0.8);
-    }
-
-    .marketplace-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 4rem;
-    }
-
-    .marketplace-item {
-      border: 1px solid rgba(255,255,255,0.15);
-      padding: 2.5rem;
-      border-radius: 12px;
-      background: rgba(255,255,255,0.05);
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-
-    .marketplace-item:hover {
-      border-color: rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.12);
-      transform: translateY(-8px);
-      box-shadow: 0 15px 50px rgba(0,0,0,0.3), 0 0 30px rgba(79,70,229,0.15);
-    }
-
-    .marketplace-icon {
-      font-size: 0.875rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      color: var(--accent);
-      opacity: 1;
-    }
-
-    .marketplace-item h3 {
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    .marketplace-item p {
-      color: rgba(255,255,255,0.7);
-      font-size: 0.9375rem;
-      line-height: 1.5;
-    }
-
-    .marketplace-cta {
-      display: inline-block;
-      margin-top: 4rem;
-      background: var(--accent);
-      color: var(--white);
-      padding: 1.25rem 3rem;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 10px;
-      transition: all 0.3s;
-    }
-
-    .marketplace-cta:hover {
-      background: var(--accent-hover);
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(79,70,229,0.4);
-    }
-
-    /* FAQ */
-    .faq {
-      background: var(--grey-100);
-    }
-
-    .faq-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .faq-item {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.06);
-      transition: all 0.3s ease;
-      border: 1px solid transparent;
-    }
-
-    .faq-item:hover {
-      box-shadow: 0 15px 40px rgba(0,0,0,0.1), 0 0 20px rgba(79,70,229,0.06);
-      transform: translateY(-5px);
-      border-color: var(--accent-light);
-      background: linear-gradient(180deg, var(--white) 0%, var(--accent-light) 100%);
-    }
-
-    .faq-item h3 {
-      font-size: 1.125rem;
-      margin-bottom: 0.75rem;
-      font-weight: 600;
-      color: var(--black);
-    }
-
-    .faq-item p {
-      color: var(--grey-600);
-      font-size: 0.9375rem;
-      line-height: 1.6;
-    }
-
-    /* FOOTER CTA */
-    .footer-cta {
-      text-align: center;
-      padding: 8rem 2rem;
-      background: var(--white);
-      border-top: none;
-    }
-
-    .footer-cta .section-title {
-      max-width: 600px;
-      margin: 0 auto 1.5rem;
-    }
-
-    .footer-cta .section-desc {
-      margin: 0 auto 3rem;
-    }
-
-    .cta-btn {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--white);
-      padding: 1.5rem 4rem;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.125rem;
-      border-radius: 12px;
-      transition: all 0.3s;
-    }
-
-    .cta-btn:hover {
-      background: var(--accent-hover);
-      transform: translateY(-3px);
-      box-shadow: 0 15px 50px rgba(79,70,229,0.3);
-    }
-
-    /* FOOTER */
-    footer {
-      background: var(--black);
-      color: var(--white);
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    footer .logo {
-      color: var(--white);
-      margin-bottom: 1rem;
-    }
-
-    footer p {
-      font-size: 0.875rem;
-      opacity: 0.6;
-    }
-
-    .footer-nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .footer-nav a {
-      color: var(--white);
-      text-decoration: none;
-      font-size: 0.875rem;
-      opacity: 0.7;
-      transition: opacity 0.2s;
-    }
-
-    .footer-nav a:hover {
-      opacity: 1;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 1024px) {
-      .plans-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .marketplace-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .faq-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .mobile-menu-btn {
-        display: block;
-      }
-
-      .nav-cta {
-        display: none;
-      }
-
-      .logo {
-        font-size: 1.125rem;
-      }
-
-      .sticky-email {
-        bottom: 1rem;
-        right: 1rem;
-        padding: 0.75rem 1rem;
-        font-size: 0.75rem;
-      }
-
-      .back-to-top {
-        bottom: 1rem;
-        left: 1rem;
-        width: 44px;
-        height: 44px;
-      }
-
-      .build-features {
-        grid-template-columns: 1fr;
-      }
-
-      /* Table responsive wrapper */
-      .table-wrapper {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        margin: 0 -1.25rem;
-        padding: 0 1.25rem;
-      }
-
-      .ads-table {
-        min-width: 400px;
-      }
-
-      .trusted-by {
-        position: relative;
-        bottom: auto;
-        padding-top: 3rem;
-      }
-
-      .trusted-logos {
-        gap: 1.5rem;
-      }
-
-      .trusted-logo {
-        font-size: 0.9rem;
-      }
-
-      section {
-        padding: 4rem 1.25rem;
-      }
-
-      .hero {
-        padding: 6rem 1.25rem 4rem;
-      }
-
-      .hero h1 {
-        font-size: 2.5rem;
-        line-height: 1.05;
-      }
-
-      .hero-sub {
-        font-size: 0.75rem;
-        letter-spacing: 0.05em;
-      }
-
-      .hero-cta {
-        padding: 1rem 2rem;
-        font-size: 0.875rem;
-      }
-
-      .section-title {
-        font-size: 1.75rem;
-        line-height: 1.15;
-      }
-
-      .section-desc {
-        font-size: 1rem;
-      }
-
-      .price-hero {
-        font-size: 2.25rem;
-      }
-
-      .audit-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-      }
-
-      .audit-form {
-        padding: 2rem 1.5rem;
-      }
-
-      .audit-features li {
-        font-size: 1rem;
-      }
-
-      .audit-features-inline {
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-
-      .plans-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
-
-      .plan-card {
-        padding: 2rem 1.5rem;
-      }
-
-      .plan-price {
-        font-size: 2.5rem;
-      }
-
-      .build-features {
-        gap: 1rem;
-      }
-
-      .build-feature {
-        padding: 1.5rem;
-      }
-
-      .ads-table {
-        font-size: 0.875rem;
-      }
-
-      .ads-table th,
-      .ads-table td {
-        padding: 1rem 0.75rem;
-      }
-
-      .fee-highlight {
-        font-size: 1.25rem;
-      }
-
-      .ads-extras {
-        grid-template-columns: 1fr;
-      }
-
-      .marketplace-item {
-        padding: 2rem;
-      }
-
-      .marketplace-item h3 {
-        font-size: 1.25rem;
-      }
-
-      .marketplace-cta {
-        padding: 1rem 2rem;
-        font-size: 0.9375rem;
-      }
-
-      .footer-cta {
-        padding: 5rem 1.25rem;
-      }
-
-      .cta-btn {
-        padding: 1.25rem 2.5rem;
-        font-size: 1rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .section-title {
-        font-size: 1.5rem;
-      }
-
-      .price-hero {
-        font-size: 1.875rem;
-      }
-
-      .plan-price {
-        font-size: 2rem;
-      }
-    }
-
+    :root{--black:#1a1a2e;--white:#fefefe;--grey-100:#f8f9fa;--grey-200:#e9ecef;--grey-300:#dee2e6;--grey-400:#adb5bd;--grey-500:#6c757d;--grey-600:#495057;--grey-700:#404040;--grey-800:#2d2d44;--grey-900:#171717;--accent:#4f46e5;--accent-hover:#4338ca;--accent-light:#eef2ff}
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background-color:var(--white);color:var(--black);line-height:1.6;overflow-x:hidden}
+    .fade-in{opacity:1;transform:translateY(0);transition:opacity .6s ease-out,transform .6s ease-out}
+    .fade-in.animate{opacity:0;transform:translateY(30px)}
+    .fade-in.visible{opacity:1;transform:translateY(0)}
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(254,254,254,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--grey-200);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+    .logo{font-family:'Inter',sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:-.02em;color:var(--black);text-decoration:none}
+    .logo:hover{opacity:.8}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--black);font-size:.875rem;font-weight:500;transition:opacity .2s}
+    .nav-links a:hover{opacity:.6}
+    .nav-cta{background:var(--accent);color:var(--white);padding:.75rem 1.5rem;text-decoration:none;font-weight:600;font-size:.875rem;border-radius:8px;transition:all .3s}
+    .nav-cta:hover{background:var(--accent-hover);transform:translateY(-2px)}
+    .back-to-top{position:fixed;bottom:2rem;left:2rem;background:var(--white);color:var(--black);width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.25rem;z-index:999;transition:all .3s;box-shadow:0 4px 15px rgba(0,0,0,.1);border:1px solid var(--grey-200);opacity:1}
+    .back-to-top:hover{background:var(--grey-100);transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.15)}
+    .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:8rem 2rem 4rem;background:linear-gradient(135deg,var(--black) 0%,#2d2d5a 100%);color:var(--white);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 80%,rgba(79,70,229,.15) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(79,70,229,.1) 0%,transparent 50%)}
+    .hero-content{position:relative;z-index:1;max-width:900px}
+    .hero h1{font-family:'Inter',sans-serif;font-size:clamp(2.5rem,8vw,5rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;margin-bottom:1.5rem;animation:fadeUp .8s ease-out}
+    .hero-sub{font-size:clamp(.875rem,2vw,1.125rem);color:var(--white);margin-bottom:3rem;letter-spacing:.1em;animation:fadeUp .8s ease-out .2s both;opacity:.7}
+    .hero-cta{display:inline-block;background:var(--accent);color:var(--white);padding:1.25rem 3rem;font-weight:600;font-size:1rem;text-decoration:none;border-radius:10px;transition:all .3s;animation:fadeUp .8s ease-out .4s both}
+    .hero-cta:hover{background:var(--accent-hover);transform:translateY(-3px);box-shadow:0 10px 40px rgba(79,70,229,.4)}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    section{padding:6rem 2rem;background:var(--white)}
+    .container{max-width:1200px;margin:0 auto}
+    .section-label{font-size:.875rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem}
+    .section-title{font-family:'Inter',sans-serif;font-size:clamp(1.75rem,5vw,3rem);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-bottom:1.25rem;color:var(--black)}
+    .section-desc{font-size:1.125rem;color:var(--black);max-width:600px;margin-bottom:3rem}
+    .audit{background:var(--grey-100)}
+    .audit-content{max-width:1000px;margin:0 auto;text-align:center}
+    .audit-content .section-desc{margin:0 auto 2.5rem;max-width:700px}
+    .audit-features-inline{display:flex;justify-content:center;gap:2.5rem;margin-bottom:2.5rem}
+    .audit-feature-item{display:flex;align-items:center;gap:.5rem;font-size:1rem;white-space:nowrap}
+    .audit-feature-item::before{content:'✓';color:var(--accent);font-weight:700}
+    .audit-btn,.btn-primary{display:inline-block;text-decoration:none;text-align:center;padding:1rem 2.5rem;font-size:1rem;background:var(--accent);border-radius:10px;color:var(--white);font-weight:600;transition:all .3s;border:none;cursor:pointer}
+    .audit-btn:hover,.btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px)}
+    .website-build{background:linear-gradient(135deg,var(--black) 0%,#2d2d5a 100%);color:var(--white)}
+    .website-build .section-label{color:rgba(255,255,255,.6)}
+    .website-build .section-title{color:var(--white)}
+    .website-build .section-desc{color:rgba(255,255,255,.8)}
+    .price-hero{font-family:'Inter',sans-serif;font-size:clamp(2.5rem,8vw,4.5rem);font-weight:700;letter-spacing:-.03em;margin-bottom:2rem;background:linear-gradient(135deg,#fff 0%,rgba(255,255,255,.8) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .build-features{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
+    .build-feature{padding:2rem;border:1px solid rgba(255,255,255,.15);border-radius:12px;background:rgba(255,255,255,.05);transition:all .3s}
+    .build-feature:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.08);transform:translateY(-3px)}
+    .build-feature h3{font-size:1.125rem;margin-bottom:.75rem;font-weight:600}
+    .build-feature p{color:rgba(255,255,255,.7);font-size:.9375rem;line-height:1.5}
+    .plans{background:var(--white)}
+    .plans-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
+    .plan-card{background:var(--white);padding:2.5rem 2rem;display:flex;flex-direction:column;border:1px solid var(--grey-300);border-radius:16px;transition:all .3s;box-shadow:0 4px 15px rgba(0,0,0,.06)}
+    .plan-card:hover{border-color:var(--accent);transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.12)}
+    .plan-card.featured{background:linear-gradient(135deg,var(--black) 0%,#2d2d5a 100%);color:var(--white);border:1px solid transparent}
+    .plan-card.featured:hover{box-shadow:0 20px 50px rgba(26,26,46,.3)}
+    .plan-name{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+    .plan-card.featured .plan-name{color:rgba(255,255,255,.8)}
+    .plan-price{font-family:'Inter',sans-serif;font-size:2.75rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.25rem}
+    .plan-period{color:var(--accent);font-size:.875rem;margin-bottom:2rem}
+    .plan-card.featured .plan-period{color:rgba(255,255,255,.8)}
+    .plan-features{list-style:none;flex-grow:1;margin-bottom:2rem}
+    .plan-features li{padding:.75rem 0;border-bottom:1px solid var(--grey-200);font-size:.9375rem;color:var(--grey-600)}
+    .plan-card.featured .plan-features li{border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.8)}
+    .plan-cta{display:block;text-align:center;padding:1rem;background:var(--accent);color:var(--white);text-decoration:none;font-weight:600;font-size:.875rem;border-radius:8px;transition:all .3s}
+    .plan-cta:hover{background:var(--accent-hover);transform:translateY(-2px)}
+    .plan-card.featured .plan-cta{background:var(--white);color:var(--black)}
+    .plan-card.featured .plan-cta:hover{background:var(--grey-100)}
+    .ads{background:var(--grey-100)}
+    .ads-table{width:100%;border-collapse:separate;border-spacing:0;margin-top:3rem;background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+    .ads-table th,.ads-table td{padding:1.5rem 2rem;text-align:left;border-bottom:1px solid var(--grey-200)}
+    .ads-table th{background:var(--black);color:var(--white);font-weight:600;font-size:.875rem;letter-spacing:.05em;text-transform:uppercase}
+    .ads-table td{font-size:1.125rem}
+    .ads-table tr:last-child td{border-bottom:none}
+    .ads-table tr:hover td{background:var(--grey-100)}
+    .fee-highlight{font-weight:700;font-size:1.5rem;color:var(--accent)}
+    .ads-extras{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
+    .ads-extra-item{background:var(--white);padding:1.5rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.08);transition:all .3s}
+    .ads-extra-item:hover{box-shadow:0 10px 30px rgba(0,0,0,.12);transform:translateY(-3px)}
+    .ads-extra-item h4{font-size:1rem;font-weight:600;margin-bottom:.5rem;color:var(--black)}
+    .ads-extra-item p{font-size:.875rem;color:var(--grey-600);line-height:1.5}
+    .marketplace{background:linear-gradient(135deg,var(--black) 0%,#2d2d5a 100%);color:var(--white)}
+    .marketplace .section-label{color:rgba(255,255,255,.6)}
+    .marketplace .section-title{color:var(--white)}
+    .marketplace .section-desc{color:rgba(255,255,255,.8)}
+    .marketplace-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
+    .marketplace-item{border:1px solid rgba(255,255,255,.15);padding:2.5rem;border-radius:12px;background:rgba(255,255,255,.05);transition:all .3s}
+    .marketplace-item:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.08);transform:translateY(-5px)}
+    .marketplace-icon{font-size:.875rem;font-weight:600;margin-bottom:1.5rem;color:var(--accent)}
+    .marketplace-item h3{font-size:1.25rem;margin-bottom:1rem;font-weight:600}
+    .marketplace-item p{color:rgba(255,255,255,.7);font-size:.9375rem;line-height:1.5}
+    .marketplace-cta{display:inline-block;margin-top:4rem;background:var(--accent);color:var(--white);padding:1.25rem 3rem;text-decoration:none;font-weight:600;border-radius:10px;transition:all .3s}
+    .marketplace-cta:hover{background:var(--accent-hover);transform:translateY(-3px);box-shadow:0 10px 30px rgba(79,70,229,.4)}
+    .faq{background:var(--grey-100)}
+    .faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem}
+    .faq-item{background:var(--white);padding:2rem;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.04);transition:all .3s}
+    .faq-item:hover{box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    .faq-item h3{font-size:1.125rem;margin-bottom:.75rem;font-weight:600;color:var(--black)}
+    .faq-item p{color:var(--grey-600);font-size:.9375rem;line-height:1.6}
+    .footer-cta{text-align:center;padding:8rem 2rem;background:var(--white)}
+    .footer-cta .section-title{max-width:600px;margin:0 auto 1.5rem}
+    .footer-cta .section-desc{margin:0 auto 3rem}
+    .cta-btn{display:inline-block;background:var(--accent);color:var(--white);padding:1.5rem 4rem;text-decoration:none;font-weight:600;font-size:1.125rem;border-radius:12px;transition:all .3s}
+    .cta-btn:hover{background:var(--accent-hover);transform:translateY(-3px);box-shadow:0 15px 50px rgba(79,70,229,.3)}
+    footer{background:var(--black);color:var(--white);padding:4rem 2rem;text-align:center}
+    footer .logo{color:var(--white);margin-bottom:1rem}
+    footer p{font-size:.875rem;opacity:.6}
+    @media(max-width:1024px){.plans-grid{grid-template-columns:repeat(2,1fr)}.marketplace-grid,.faq-grid{grid-template-columns:1fr}}
+    @media(max-width:768px){nav{padding:1rem}.nav-links{display:none}.nav-cta{padding:.6rem 1rem;font-size:.7rem}section{padding:4rem 1.25rem}.hero{padding:6rem 1.25rem 4rem}.hero h1{font-size:2.5rem}.hero-sub{font-size:.75rem}.hero-cta{padding:1rem 2rem;font-size:.875rem}.section-title{font-size:1.75rem}.section-desc{font-size:1rem}.price-hero{font-size:2.25rem}.audit-features-inline{flex-direction:column;gap:.75rem}.plans-grid{grid-template-columns:1fr;gap:1rem}.plan-card{padding:2rem 1.5rem}.plan-price{font-size:2.5rem}.build-features{grid-template-columns:1fr;gap:1rem}.build-feature{padding:1.5rem}.ads-table th,.ads-table td{padding:1rem .75rem}.fee-highlight{font-size:1.25rem}.ads-extras{grid-template-columns:1fr}.marketplace-item{padding:2rem}.marketplace-cta{padding:1rem 2rem}.footer-cta{padding:5rem 1.25rem}.cta-btn{padding:1.25rem 2.5rem;font-size:1rem}}
+    @media(max-width:480px){.hero h1{font-size:2rem}.section-title{font-size:1.5rem}.price-hero{font-size:1.875rem}.plan-price{font-size:2rem}}
   </style>
 </head>
 <body>
-
-  <!-- NAVIGATION -->
   <nav>
     <a href="/" class="logo">BRAND EXPAND</a>
     <ul class="nav-links">
@@ -1186,27 +144,8 @@
       <li><a href="#marketplace">3rd Party</a></li>
     </ul>
     <a href="mailto:info@brandexpand.digital" class="nav-cta">Contact</a>
-    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
   </nav>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#review" class="mobile-link">Free Review</a>
-    <a href="#website" class="mobile-link">Websites</a>
-    <a href="#plans" class="mobile-link">Plans</a>
-    <a href="#ads" class="mobile-link">Ad Services</a>
-    <a href="#marketplace" class="mobile-link">3rd Party</a>
-    <a href="mailto:info@brandexpand.digital" class="mobile-link" style="color: var(--accent); font-weight: 600;">Contact</a>
-  </div>
-
-  <!-- BACK TO TOP -->
   <a href="#" class="back-to-top" id="backToTop">↑</a>
-
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <h1>We Help Brands Grow Online</h1>
@@ -1214,8 +153,6 @@
       <a href="#review" class="hero-cta">Get Your Free Review</a>
     </div>
   </section>
-
-  <!-- FREE AUDIT -->
   <section class="audit" id="review">
     <div class="container">
       <div class="audit-content fade-in">
@@ -1232,190 +169,125 @@
       </div>
     </div>
   </section>
-
-  <!-- WEBSITE BUILD -->
   <section class="website-build" id="website">
     <div class="container">
       <p class="section-label fade-in">Website Build & Redesign</p>
-      <h2 class="section-title fade-in" style="color: var(--white);">Your Website, Built Right.</h2>
+      <h2 class="section-title fade-in" style="color:var(--white)">Your Website, Built Right.</h2>
       <p class="price-hero fade-in">$2,495 to $9,995</p>
       <p class="section-desc fade-in">Whether you need a brand new site or a complete refresh, we build WordPress and Shopify sites that convert visitors into customers.</p>
-      
       <div class="build-features">
-        <div class="build-feature fade-in">
-          <h3>WordPress or Shopify</h3>
-          <p>We work with both platforms. You choose what fits your business.</p>
-        </div>
-        <div class="build-feature fade-in">
-          <h3>Mobile-First Design</h3>
-          <p>Responsive layouts that look great on every device.</p>
-        </div>
-        <div class="build-feature fade-in">
-          <h3>SEO Foundation</h3>
-          <p>Built-in optimization so you get found on Google.</p>
-        </div>
-        <div class="build-feature fade-in">
-          <h3>Lead Capture Forms</h3>
-          <p>Contact forms, quote requests, applications. Routed where you need them.</p>
-        </div>
-        <div class="build-feature fade-in">
-          <h3>50/50 Payment</h3>
-          <p>Half to start, half when you're happy with the result.</p>
-        </div>
-        <div class="build-feature fade-in">
-          <h3>30-Day Guarantee</h3>
-          <p>Money back if you're not completely satisfied.</p>
-        </div>
+        <div class="build-feature fade-in"><h3>WordPress or Shopify</h3><p>We work with both platforms. You choose what fits your business.</p></div>
+        <div class="build-feature fade-in"><h3>Mobile-First Design</h3><p>Responsive layouts that look great on every device.</p></div>
+        <div class="build-feature fade-in"><h3>SEO Foundation</h3><p>Built-in optimization so you get found on Google.</p></div>
+        <div class="build-feature fade-in"><h3>Lead Capture Forms</h3><p>Contact forms, quote requests, applications. Routed where you need them.</p></div>
+        <div class="build-feature fade-in"><h3>50/50 Payment</h3><p>Half to start, half when you're happy with the result.</p></div>
+        <div class="build-feature fade-in"><h3>30-Day Guarantee</h3><p>Money back if you're not completely satisfied.</p></div>
       </div>
     </div>
   </section>
-
-  <!-- MONTHLY PLANS -->
   <section class="plans" id="plans">
     <div class="container">
       <p class="section-label fade-in">Monthly Plans</p>
       <h2 class="section-title fade-in">Select a Tier</h2>
       <p class="section-desc fade-in">Ongoing support to keep your brand growing. Every plan includes a 12 month agreement.</p>
-
       <div class="plans-grid">
-        <!-- STARTER -->
         <div class="plan-card fade-in">
           <p class="plan-name">Starter</p>
           <p class="plan-price">$99</p>
           <p class="plan-period">per month</p>
-          <ul class="plan-features">
-            <li>Hosting</li>
-            <li>Plugin/WordPress updates</li>
-            <li>Basic maintenance</li>
-            <li>Email support</li>
-          </ul>
+          <ul class="plan-features"><li>Hosting</li><li>Plugin/WordPress updates</li><li>Basic maintenance</li><li>Email support</li></ul>
           <a href="https://brandexpand.agencyhandy.com/catalog/monthly-plans-1764877319100842/checkout" class="plan-cta">Get Started</a>
         </div>
-
-        <!-- GROWTH -->
         <div class="plan-card fade-in">
           <p class="plan-name">Growth</p>
           <p class="plan-price">$299</p>
           <p class="plan-period">per month</p>
-          <ul class="plan-features">
-            <li>Everything in Starter</li>
-            <li>Monthly backups</li>
-            <li>Security monitoring</li>
-            <li>1 blog/month</li>
-            <li>Quarterly SEO report</li>
-            <li>30-min scheduled call</li>
-          </ul>
+          <ul class="plan-features"><li>Everything in Starter</li><li>Monthly backups</li><li>Security monitoring</li><li>1 blog/month</li><li>Quarterly SEO report</li><li>30-min scheduled call</li></ul>
           <a href="https://brandexpand.agencyhandy.com/catalog/monthly-plans-1764877319100842/checkout" class="plan-cta">Get Started</a>
         </div>
-
-        <!-- PRO -->
         <div class="plan-card featured fade-in">
           <p class="plan-name">Pro | Most Popular</p>
           <p class="plan-price">$499</p>
           <p class="plan-period">per month</p>
-          <ul class="plan-features">
-            <li>Everything in Growth</li>
-            <li>Biweekly backups</li>
-            <li>2 blogs/month</li>
-            <li>Social posting (FB + IG daily)</li>
-            <li>Always-on boost campaign</li>
-            <li>Quarterly performance report</li>
-            <li>Phone support</li>
-          </ul>
+          <ul class="plan-features"><li>Everything in Growth</li><li>Biweekly backups</li><li>2 blogs/month</li><li>Social posting (FB + IG daily)</li><li>Always-on boost campaign</li><li>Quarterly performance report</li><li>Phone support</li></ul>
           <a href="https://brandexpand.agencyhandy.com/catalog/monthly-plans-1764877319100842/checkout" class="plan-cta">Get Started</a>
         </div>
-
-        <!-- FULL SERVICE -->
         <div class="plan-card fade-in">
           <p class="plan-name">Full Service</p>
           <p class="plan-price">$899</p>
           <p class="plan-period">per month</p>
-          <ul class="plan-features">
-            <li>Everything in Pro</li>
-            <li>Weekly backups</li>
-            <li>4 blogs/month</li>
-            <li>Monthly check-in call</li>
-            <li>Priority phone support</li>
-          </ul>
+          <ul class="plan-features"><li>Everything in Pro</li><li>Weekly backups</li><li>4 blogs/month</li><li>Monthly check-in call</li><li>Priority phone support</li></ul>
           <a href="https://brandexpand.agencyhandy.com/catalog/monthly-plans-1764877319100842/checkout" class="plan-cta">Get Started</a>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- AD MANAGEMENT -->
   <section class="ads" id="ads">
     <div class="container">
       <p class="section-label fade-in">Ad Services</p>
       <h2 class="section-title fade-in">Paid Ads, Fully Managed</h2>
       <p class="section-desc fade-in">We run your campaigns so you can focus on your business. The more you spend, the more you save.</p>
-
-      <div class="table-wrapper">
-        <table class="ads-table fade-in">
-          <thead>
-            <tr>
-              <th>Monthly Ad Spend</th>
-              <th>Management Fee</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>$2,000+ /mo</td>
-              <td><span class="fee-highlight">12%</span></td>
-            </tr>
-            <tr>
-              <td>$5,000+ /mo</td>
-              <td><span class="fee-highlight">10%</span></td>
-            </tr>
-            <tr>
-              <td>$10,000+ /mo</td>
-              <td><span class="fee-highlight">8%</span></td>
-            </tr>
-            <tr>
-              <td>$25,000+ /mo</td>
-              <td><span class="fee-highlight">6%</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
+      <table class="ads-table fade-in">
+        <thead><tr><th>Monthly Ad Spend</th><th>Management Fee</th></tr></thead>
+        <tbody>
+          <tr><td>$2,000+ /mo</td><td><span class="fee-highlight">12%</span></td></tr>
+          <tr><td>$5,000+ /mo</td><td><span class="fee-highlight">10%</span></td></tr>
+          <tr><td>$10,000+ /mo</td><td><span class="fee-highlight">8%</span></td></tr>
+          <tr><td>$25,000+ /mo</td><td><span class="fee-highlight">6%</span></td></tr>
+        </tbody>
+      </table>
       <div class="ads-extras fade-in">
-        <div class="ads-extra-item">
-          <h4>Weekly Updates</h4>
-          <p>Performance snapshots delivered to your inbox every week.</p>
-        </div>
-        <div class="ads-extra-item">
-          <h4>Monthly Reports</h4>
-          <p>Full breakdown of spend, results, and optimizations.</p>
-        </div>
-        <div class="ads-extra-item">
-          <h4>Quarterly Reviews</h4>
-          <p>Strategy calls to review performance and plan ahead.</p>
-        </div>
-        <div class="ads-extra-item">
-          <h4>Metrics Tracking</h4>
-          <p>ROAS, CPA, CTR, conversions. All tracked and reported.</p>
-        </div>
+        <div class="ads-extra-item"><h4>Weekly Updates</h4><p>Performance snapshots delivered to your inbox every week.</p></div>
+        <div class="ads-extra-item"><h4>Monthly Reports</h4><p>Full breakdown of spend, results, and optimizations.</p></div>
+        <div class="ads-extra-item"><h4>Quarterly Reviews</h4><p>Strategy calls to review performance and plan ahead.</p></div>
+        <div class="ads-extra-item"><h4>Metrics Tracking</h4><p>ROAS, CPA, CTR, conversions. All tracked and reported.</p></div>
       </div>
     </div>
   </section>
-
-  <!-- MARKETPLACE EXPANSION -->
   <section class="marketplace" id="marketplace">
     <div class="container">
       <p class="section-label fade-in">3rd Party Marketplace</p>
-      <h2 class="section-title fade-in" style="color: var(--white);">Take Your Brand to Amazon, Walmart & Target</h2>
+      <h2 class="section-title fade-in" style="color:var(--white)">Take Your Brand to Amazon, Walmart & Target</h2>
       <p class="section-desc fade-in">Ready to sell on the biggest marketplaces? We handle everything — from brand registry and store setup to fulfillment through our own warehouse.</p>
-
       <div class="marketplace-grid">
-        <div class="marketplace-item fade-in">
-          <div class="marketplace-icon">01</div>
-          <h3>Brand Registry</h3>
-          <p>We enroll your brand and protect your listings from hijackers.</p>
-        </div>
-        <div class="marketplace-item fade-in">
-          <div class="marketplace-icon">02</div>
-          <h3>Store Setup & Management</h3>
-          <p>Product listings, optimization, and ongoing management.</p>
-        </div>
-        <div class="marketplace-
+        <div class="marketplace-item fade-in"><div class="marketplace-icon">01</div><h3>Brand Registry</h3><p>We enroll your brand and protect your listings from hijackers.</p></div>
+        <div class="marketplace-item fade-in"><div class="marketplace-icon">02</div><h3>Store Setup & Management</h3><p>Product listings, optimization, and ongoing management.</p></div>
+        <div class="marketplace-item fade-in"><div class="marketplace-icon">03</div><h3>Fulfillment</h3><p>We store and ship from our own warehouse. You focus on product.</p></div>
+      </div>
+      <a href="mailto:info@brandexpand.digital" class="marketplace-cta fade-in">Schedule a Call</a>
+    </div>
+  </section>
+  <section class="faq" id="faq">
+    <div class="container">
+      <p class="section-label fade-in">FAQ</p>
+      <h2 class="section-title fade-in">Common Questions</h2>
+      <p class="section-desc fade-in">Quick answers to help you decide.</p>
+      <div class="faq-grid">
+        <div class="faq-item fade-in"><h3>How long does a website take?</h3><p>Most sites launch within 4 to 6 weeks. Complex e-commerce builds may take 8 to 10 weeks. We'll give you a timeline before we start.</p></div>
+        <div class="faq-item fade-in"><h3>What if I'm not happy with the design?</h3><p>Every project includes revision rounds. Plus our 30-day guarantee means if you're not satisfied, you get your money back.</p></div>
+        <div class="faq-item fade-in"><h3>Do I own my website?</h3><p>100%. You own everything: the design, content, and code. We build on our hosting to keep things simple, but you can take it with you anytime.</p></div>
+        <div class="faq-item fade-in"><h3>Can I cancel my monthly plan?</h3><p>All plans include a 12 month agreement. After that, we ask for 30 days notice so we can wrap things up properly.</p></div>
+        <div class="faq-item fade-in"><h3>What's included in ad management?</h3><p>Strategy, copy, targeting, optimization, and reporting. You provide the images or videos, we handle everything else.</p></div>
+        <div class="faq-item fade-in"><h3>Do you work with small businesses?</h3><p>Absolutely. Most of our clients are small to mid-size businesses looking to level up their online presence.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-cta" id="contact">
+    <div class="container">
+      <h2 class="section-title fade-in">Not Sure What You Need?</h2>
+      <p class="section-desc fade-in">Let's talk. Schedule a free call and we'll figure out the best path forward for your brand.</p>
+      <a href="mailto:info@brandexpand.digital" class="cta-btn fade-in">Schedule a Free Call</a>
+    </div>
+  </section>
+  <footer>
+    <div class="logo">BRAND EXPAND</div>
+    <p>© 2025 Brand Expand. All rights reserved.</p>
+  </footer>
+  <script>
+    const observer=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&e.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+    document.querySelectorAll('.fade-in').forEach(e=>observer.observe(e));
+    const backToTop=document.getElementById('backToTop');
+    window.addEventListener('scroll',()=>{window.scrollY>500?backToTop.classList.add('visible'):backToTop.classList.remove('visible')});
+  </script>
+</body>
+</html>
