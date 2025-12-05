@@ -80,32 +80,10 @@
       overflow-x: hidden;
     }
 
-    /* ANIMATIONS - elements visible by default, hidden only when JS is ready */
+    /* ANIMATIONS */
     .fade-in {
       opacity: 1;
       transform: translateY(0);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-
-    .js-ready .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    .js-ready .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Fallback for users with reduced motion */
-    @media (prefers-reduced-motion: reduce) {
-      .fade-in,
-      .js-ready .fade-in,
-      .js-ready .fade-in.visible {
-        opacity: 1;
-        transform: none;
-        transition: none;
-      }
     }
 
     /* NAVIGATION */
@@ -1432,4 +1410,15 @@
     <div class="container">
       <p class="section-label fade-in">3rd Party Marketplace</p>
       <h2 class="section-title fade-in" style="color: var(--white);">Take Your Brand to Amazon, Walmart & Target</h2>
-      <p class="section-desc fade-in">Ready to sell on the
+      <p class="section-desc fade-in">Ready to sell on the biggest marketplaces? We handle everything — from brand registry and store setup to fulfillment through our own warehouse.</p>
+
+      <div class="marketplace-grid">
+        <div class="marketplace-item fade-in">
+          <div class="marketplace-icon">01</div>
+          <h3>Brand Registry</h3>
+          <p>We enroll your brand and protect your listings from hijackers.</p>
+        </div>
+        <div class="marketplace-item fade-in">
+          <div class="marketplace-icon">02</div>
+          <h3>Store Setup & Management</h3>
+          <p>Product listing
