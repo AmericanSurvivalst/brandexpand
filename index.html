@@ -521,15 +521,21 @@
       background-clip: text;
     }
 
-    .price-row {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      flex-wrap: wrap;
+    .website-quote-link {
+      margin-top: 3rem;
+      font-size: 1.125rem;
+      color: rgba(255,255,255,0.8);
     }
 
-    .price-row .price-hero {
-      margin-bottom: 0;
+    .website-quote-link a {
+      color: var(--white);
+      text-decoration: underline;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+
+    .website-quote-link a:hover {
+      opacity: 0.8;
     }
 
     .build-features {
@@ -1249,12 +1255,9 @@
     <div class="container">
       <p class="section-label fade-in">Website Build & Redesign</p>
       <h2 class="section-title fade-in" style="color: var(--white);">Your Website, Built Right.</h2>
-      <div class="price-row">
-        <p class="price-hero fade-in">$2,495 to $9,995</p>
-        <a href="https://brandexpand.agencyhandy.com/public-forms/6933115fd29c2febf8b5c037" class="hero-cta fade-in">Get a Custom Quote</a>
-      </div>
+      <p class="price-hero fade-in">$2,495 to $9,995</p>
       <p class="section-desc fade-in">Whether you need a brand new site or a complete refresh, we build WordPress and Shopify sites that convert visitors into customers.</p>
-      
+
       <div class="build-features">
         <div class="build-feature fade-in">
           <h3>WordPress or Shopify</h3>
@@ -1281,6 +1284,7 @@
           <p>Money back if you're not completely satisfied.</p>
         </div>
       </div>
+      <p class="website-quote-link fade-in">Ready to get started? <a href="https://brandexpand.agencyhandy.com/public-forms/6933115fd29c2febf8b5c037">Get a Custom Quote</a></p>
     </div>
   </section>
 
@@ -1513,8 +1517,4 @@
     });
 
     // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileM
+    const mobileMenuBtn = document.getElementById
