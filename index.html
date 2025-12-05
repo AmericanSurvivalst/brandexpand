@@ -82,19 +82,23 @@
 
     /* ANIMATIONS */
     .fade-in {
-      opacity: 1;
-      transform: translateY(0);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-
-    .fade-in.animate {
       opacity: 0;
       transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
 
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    /* Fallback for users with reduced motion or if JS fails */
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
     }
 
     /* NAVIGATION */
@@ -982,10 +986,6 @@
         grid-template-columns: 1fr;
       }
 
-      .marketplace-grid {
-        grid-template-columns: 1fr;
-      }
-
       .faq-grid {
         grid-template-columns: 1fr;
       }
@@ -1428,5 +1428,4 @@
       <p class="section-desc fade-in">Ready to sell on the biggest marketplaces? We handle everything — from brand registry and store setup to fulfillment through our own warehouse.</p>
 
       <div class="marketplace-grid">
-        <div class="marketplace-item fade-in">
-          <div class="marketplace-icon">01</di
+        <div class="marketplace
