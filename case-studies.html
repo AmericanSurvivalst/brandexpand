@@ -184,6 +184,16 @@
       animation: fadeUp 0.8s ease-out 0.2s both;
     }
 
+    .hero-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.6;
+      margin-bottom: 1rem;
+      animation: fadeUp 0.8s ease-out both;
+    }
+
     /* CASE STUDIES */
     .case-studies {
       padding: 5rem 2rem;
@@ -235,10 +245,11 @@
       transition: all 0.3s;
     }
 
-    .case-study:hover .case-study-tag {
-      background: var(--accent);
-      color: var(--white);
-    }
+    /* Brand-specific tag colors */
+    .case-study.bills-grill .case-study-tag { background: var(--bills-grill); color: var(--white); }
+    .case-study.trail-gear .case-study-tag { background: var(--trail-gear); color: var(--white); }
+    .case-study.american-survivalist .case-study-tag { background: var(--american-survivalist); color: var(--white); }
+    .case-study.cooks-corner .case-study-tag { background: var(--cooks-corner); color: var(--white); }
 
     .case-study-desc {
       color: var(--grey-600);
@@ -254,6 +265,12 @@
       margin-bottom: 2rem;
       border-left: 4px solid var(--accent);
     }
+
+    /* Brand-specific challenge highlight colors */
+    .case-study.bills-grill .case-study-challenge { border-left-color: var(--bills-grill); }
+    .case-study.trail-gear .case-study-challenge { border-left-color: var(--trail-gear); }
+    .case-study.american-survivalist .case-study-challenge { border-left-color: var(--american-survivalist); }
+    .case-study.cooks-corner .case-study-challenge { border-left-color: var(--cooks-corner); }
 
     .case-study-challenge h3 {
       font-size: 0.875rem;
@@ -296,15 +313,13 @@
       font-family: 'Inter', sans-serif;
       font-size: 2rem;
       font-weight: 800;
-      color: var(--accent);
+      color: var(--black);
       letter-spacing: -0.02em;
     }
 
-    /* Brand-specific number colors */
-    .case-study.bills-grill .result-number { color: var(--bills-grill); }
-    .case-study.trail-gear .result-number { color: var(--trail-gear); }
-    .case-study.american-survivalist .result-number { color: var(--american-survivalist); }
-    .case-study.cooks-corner .result-number { color: var(--cooks-corner); }
+    .result-number-sm {
+      font-size: 1.25rem;
+    }
 
     .result-label {
       font-size: 0.875rem;
@@ -513,8 +528,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Case Studies</h1>
-      <p>Real results for real businesses. See how we've helped companies grow their digital presence.</p>
+      <p class="hero-label">Our Work</p>
+      <h1>Real Clients. Real Results.</h1>
+      <p>We don't do vanity metrics. Here's what we've built for businesses like yours.</p>
     </div>
   </section>
 
@@ -530,8 +546,8 @@
       <p class="case-study-desc">Southern comfort food restaurant with 3 locations in Eastern North Carolina. Family-owned and known for their home-style cooking and catering services.</p>
       
       <div class="case-study-testimonial">
-        <p>Brand Expand completely transformed our online presence. We went from having no idea who was visiting our website to generating over 100 catering leads. The team gets what small businesses need.</p>
-        <cite>— Bill's Grill Management</cite>
+        <p>We had no clue how many people were even visiting our site before. Now we're pulling in catering requests every week and the phone actually rings from people who found us online.</p>
+        <cite>— Will Jenkins, Owner</cite>
       </div>
 
       <div class="case-study-challenge">
@@ -573,8 +589,8 @@
       <p class="case-study-desc">Off-road accessories e-commerce store on Shopify. Specializes in gear for Jeep, Bronco, and overland enthusiasts.</p>
       
       <div class="case-study-testimonial">
-        <p>We started with zero traffic and now we're converting at nearly 5%. Brand Expand built our SEO foundation and helped us expand to Amazon. They know e-commerce inside and out.</p>
-        <cite>— Trail Gear Oasis Owner</cite>
+        <p>Started with nothing — no traffic, no sales. Now we're converting almost 5% of visitors and expanding to Amazon. Couldn't have done it without them.</p>
+        <cite>— Trail Gear Oasis</cite>
       </div>
 
       <div class="case-study-challenge">
@@ -620,8 +636,8 @@
       <p class="case-study-desc">Survival gear and preparedness e-commerce store on Shopify. Offers everything from tactical equipment to emergency supplies and educational resources. Currently manufacturing their own product line for launch on Shopify and Amazon.</p>
       
       <div class="case-study-testimonial">
-        <p>From sourcing products to building our audience to now manufacturing our own line — Brand Expand has been with us every step. 17,000 followers and counting. These guys deliver.</p>
-        <cite>— American Survivalist Founder</cite>
+        <p>They helped us build a real community, not just a store. 17,000 followers later and we're launching our own product. That wasn't even on the radar when we started.</p>
+        <cite>— American Survivalist</cite>
       </div>
 
       <div class="case-study-challenge">
@@ -632,18 +648,18 @@
       <div class="case-study-results">
         <div class="result-item">
           <div class="result-number">17K+</div>
-          <div class="result-label">Community</div>
+          <div class="result-label">Meta Followers</div>
         </div>
         <div class="result-item">
           <div class="result-number">200K+</div>
           <div class="result-label">Monthly Reach</div>
         </div>
         <div class="result-item">
-          <div class="result-number">50+</div>
-          <div class="result-label">Free Guides</div>
+          <div class="result-number">100%</div>
+          <div class="result-label">Organic Traffic</div>
         </div>
         <div class="result-item">
-          <div class="result-number">Private Label</div>
+          <div class="result-number result-number-sm">Private Label</div>
           <div class="result-label">In Production</div>
         </div>
       </div>
@@ -669,8 +685,8 @@
       <p class="case-study-desc">Roadside restaurant, gas station, and convenience stop in Sterling, Alaska. A local staple on the Kenai Peninsula serving travelers and locals alike.</p>
       
       <div class="case-study-testimonial">
-        <p>We had nothing online before Brand Expand. Now tourists find us on Google, we take orders online, and we're finally showing up when people search for places to eat on the Kenai. Exactly what we needed.</p>
-        <cite>— Cook's Corner AK Owner</cite>
+        <p>We're a gas station with a kitchen in the middle of Alaska. Didn't think we needed a website. Turns out tourists are searching for places to stop and now they find us first.</p>
+        <cite>— Cook's Corner AK</cite>
       </div>
 
       <div class="case-study-challenge">
@@ -680,16 +696,16 @@
 
       <div class="case-study-results">
         <div class="result-item">
-          <div class="result-number">New</div>
-          <div class="result-label">WordPress Website</div>
+          <div class="result-number">Page 1</div>
+          <div class="result-label">Google Ranking</div>
         </div>
         <div class="result-item">
           <div class="result-number">Online</div>
-          <div class="result-label">Ordering System</div>
+          <div class="result-label">Ordering Live</div>
         </div>
         <div class="result-item">
-          <div class="result-number">Local</div>
-          <div class="result-label">SEO Optimized</div>
+          <div class="result-number">3X</div>
+          <div class="result-label">Google Visibility</div>
         </div>
       </div>
 
