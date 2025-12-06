@@ -230,7 +230,7 @@
 
     .values-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
 
@@ -264,6 +264,8 @@
     .cta-section {
       padding: 5rem 2rem;
       text-align: center;
+      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
+      color: var(--white);
     }
 
     .cta-section h2 {
@@ -271,10 +273,11 @@
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1rem;
+      color: var(--white);
     }
 
     .cta-section p {
-      color: var(--grey-600);
+      color: rgba(255,255,255,0.8);
       margin-bottom: 2rem;
       max-width: 500px;
       margin-left: auto;
@@ -283,8 +286,8 @@
 
     .cta-btn {
       display: inline-block;
-      background: var(--accent);
-      color: var(--white);
+      background: var(--white);
+      color: var(--black);
       padding: 1.25rem 3rem;
       text-decoration: none;
       font-weight: 600;
@@ -294,21 +297,22 @@
     }
 
     .cta-btn:hover {
-      background: var(--accent-hover);
+      background: var(--grey-100);
       transform: translateY(-3px);
-      box-shadow: 0 10px 40px rgba(79,70,229,0.4);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
     }
 
     /* FOOTER */
     footer {
       padding: 3rem 2rem;
       text-align: center;
-      border-top: 1px solid var(--grey-200);
+      background: var(--grey-100);
     }
 
     footer .logo {
       margin-bottom: 1rem;
       display: inline-block;
+      color: var(--black);
     }
 
     footer p {
@@ -317,14 +321,14 @@
     }
 
     footer a {
-      color: var(--grey-400);
+      color: var(--grey-500);
       text-decoration: none;
       font-size: 0.875rem;
       transition: color 0.3s;
     }
 
     footer a:hover {
-      color: var(--accent);
+      color: var(--black);
     }
 
     @media (max-width: 768px) {
@@ -346,6 +350,10 @@
 
       .values-section {
         padding: 3rem 1.25rem;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
