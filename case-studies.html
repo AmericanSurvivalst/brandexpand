@@ -464,30 +464,62 @@
 
     /* FOOTER */
     footer {
-      padding: 3rem 2rem;
-      text-align: center;
-      border-top: 1px solid var(--grey-200);
+      padding: 4rem 2rem 2rem;
+      background: var(--grey-100);
     }
 
-    footer .logo {
-      margin-bottom: 1rem;
-      display: inline-block;
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
     }
 
-    footer p {
-      color: var(--grey-500);
+    .footer-col h4 {
+      font-family: 'Inter', sans-serif;
       font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--black);
     }
 
-    footer a {
-      color: var(--grey-400);
+    .footer-col a {
+      display: block;
+      color: var(--grey-500);
       text-decoration: none;
       font-size: 0.875rem;
+      margin-bottom: 0.5rem;
       transition: color 0.3s;
     }
 
-    footer a:hover {
-      color: var(--accent);
+    .footer-col a:hover {
+      color: var(--black);
+    }
+
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--grey-200);
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      color: var(--grey-400);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+      }
+
+      .footer-col a {
+        margin-bottom: 0.75rem;
+      }
     }
 
     @media (max-width: 768px) {
@@ -730,13 +762,29 @@
 
   <!-- FOOTER -->
   <footer>
-    <a href="/" class="logo">BRAND EXPAND</a>
-    <p style="margin: 0.75rem 0;">
-      <a href="/case-studies.html" style="margin-right: 1.5rem;">Case Studies</a>
-      <a href="/about.html" style="margin-right: 1.5rem;">About</a>
-      <a href="https://client.brandexpand.digital/sign-in">Client Login</a>
-    </p>
-    <p>© 2025 Brand Expand. All rights reserved.</p>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="/" class="logo" style="margin-bottom: 0.5rem;">BRAND EXPAND</a>
+        <p style="color: var(--grey-500); font-size: 0.875rem; margin-top: 0.5rem;">We help brands grow online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/dtc-brands.html">DTC Brands</a>
+        <a href="/service-businesses.html">Service Businesses</a>
+        <a href="/amazon-sellers.html">Amazon Sellers</a>
+        <a href="/creator-brands.html">Creator Brands</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/case-studies.html">Case Studies</a>
+        <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775">Contact</a>
+        <a href="https://client.brandexpand.digital/sign-in">Client Login</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Brand Expand. All rights reserved.</p>
+    </div>
   </footer>
 
   <script>
