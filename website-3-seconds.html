@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Has 3 Seconds. Here's How to Not Blow It. | Brand Expand</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon-512.png">
+  
+  <meta name="description" content="Above-the-fold design principles that turn bounces into buyers.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --black: #1a1a2e;
+      --white: #fefefe;
+      --grey-100: #f8f9fa;
+      --grey-200: #e9ecef;
+      --grey-300: #dee2e6;
+      --grey-400: #adb5bd;
+      --grey-500: #6c757d;
+      --grey-600: #495057;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(254,254,254,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--grey-200);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    .nav-cta {
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: all 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    .article-header {
+      padding: 10rem 2rem 4rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
+    }
+
+    .article-category {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-header h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      color: var(--white);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .article-meta {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+    }
+
+    .article-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .article-content p {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      color: var(--grey-600);
+    }
+
+    .article-content h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: var(--black);
+    }
+
+    .article-content h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--black);
+    }
+
+    .article-content ul, .article-content ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    .article-content li {
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 0.75rem;
+      color: var(--grey-600);
+    }
+
+    .back-link {
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .cta-section {
+      padding: 5rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
+    }
+
+    .cta-section h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--white);
+      color: var(--black);
+      padding: 1.25rem 3rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: var(--grey-100);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      padding: 4rem 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-col .logo {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--white);
+    }
+
+    .footer-col p {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.875rem;
+    }
+
+    .footer-col h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+
+    .footer-col a {
+      display: block;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s;
+    }
+
+    .footer-col a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 768px) {
+      .article-header h1 {
+        font-size: 1.75rem;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="logo">BRAND EXPAND</a>
+    <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a>
+  </nav>
+
+  <header class="article-header">
+    <span class="article-category">Branding</span>
+    <h1>Your Website Has 3 Seconds. Here's How to Not Blow It.</h1>
+    <p class="article-meta">Nov 5, 2025 • 6 min read</p>
+  </header>
+
+  <article class="article-content">
+    <a href="/blog.html" class="back-link">← Back to Blog</a>
+    
+    <p>Three seconds. That's how long you have before someone decides to stay or bounce. In that time, they need to understand what you do, who it's for, and why they should care.</p>
+    
+    <p>Most websites fail this test. Here's how to pass it.</p>
+
+    <h2>The Above-the-Fold Checklist</h2>
+    
+    <p>Before anyone scrolls, they should see:</p>
+    <ul>
+      <li>Clear headline stating what you do or what problem you solve</li>
+      <li>Subheadline with supporting detail or benefit</li>
+      <li>One obvious call-to-action</li>
+      <li>Visual that reinforces the message (product, result, or person)</li>
+    </ul>
+    
+    <p>That's it. No sliders. No walls of text. No mystery.</p>
+
+    <h2>The Headline Formula</h2>
+    
+    <p>Good headlines follow a pattern: [Desired outcome] + [Timeframe or qualifier] + [Without common objection]</p>
+    
+    <p>Example: "Grow your email list by 10,000 subscribers without spending on ads."</p>
+    
+    <p>Clear. Specific. Addresses the skeptic.</p>
+
+    <h2>One CTA, Not Five</h2>
+    
+    <p>Multiple CTAs create paralysis. "Sign up," "Learn more," "Watch demo," "Download guide." Too many choices means no choice.</p>
+    
+    <p>Pick the one action you most want visitors to take. Make that the only option above the fold.</p>
+
+    <h2>Visual Hierarchy</h2>
+    
+    <p>Guide the eye. Headline is biggest. Subheadline is smaller. CTA button is a contrasting color. Everything else fades back.</p>
+    
+    <p>Squint at your homepage. Can you tell what's most important? If not, redesign.</p>
+
+    <h2>Speed Matters</h2>
+    
+    <p>If your site takes 5 seconds to load, people leave before they even see your headline. Optimize images. Minimize scripts. Test on mobile. Speed is a design decision.</p>
+
+    <h2>Test It</h2>
+    
+    <p>Show your homepage to someone who's never seen it. Give them 5 seconds. Ask what you do. If they can't answer, your above-the-fold needs work.</p>
+
+  </article>
+
+  <section class="cta-section">
+    <h2>Need Help Optimizing Your Store?</h2>
+    <p>Get a free audit of your Shopify setup and recommendations for improvement.</p>
+    <a href="https://brandexpand.agencyhandy.com/public-forms/6933030eeeb840ae051edc6a" class="cta-btn">Get Your Free Review</a>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>&nbsp;</h4>
+        <a href="/" class="logo">BRAND EXPAND</a>
+        <p>We help brands grow online.</p>
+        <a href="https://client.brandexpand.digital/sign-in" style="margin-top: 1rem;">Client Login</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/dtc-brands.html">DTC Brands</a>
+        <a href="/service-businesses.html">Service Businesses</a>
+        <a href="/amazon-sellers.html">Amazon Sellers</a>
+        <a href="/creator-brands.html">Creator Brands</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/case-studies.html">Case Studies</a>
+        <a href="/blog.html">Blog</a>
+        <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Brand Expand. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
