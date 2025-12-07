@@ -114,6 +114,32 @@
       transform: translateY(-2px);
     }
 
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--grey-600);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--black);
+    }
+
+    .nav-links .nav-cta {
+      color: var(--white);
+    }
+
+    .nav-links .nav-cta:hover {
+      color: var(--white);
+    }
+
     /* HERO */
     .hero {
       padding: 10rem 2rem 5rem;
@@ -627,7 +653,13 @@
   <!-- NAV -->
   <nav>
     <a href="/" class="logo">BRAND EXPAND</a>
-    <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/service-businesses.html">Service Businesses</a>
+      <a href="/amazon-sellers.html">Amazon Sellers</a>
+      <a href="/creator-brands.html">Creator Brands</a>
+      <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a>
+    </div>
   </nav>
 
   <!-- HERO -->
