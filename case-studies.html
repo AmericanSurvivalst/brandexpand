@@ -470,11 +470,21 @@
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 3rem;
       max-width: 900px;
       margin: 0 auto;
-      text-align: left;
+      text-align: center;
+    }
+
+    .footer-col .logo {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col p {
+      color: var(--grey-500);
+      font-size: 0.875rem;
     }
 
     .footer-col h4 {
@@ -764,8 +774,9 @@
   <footer>
     <div class="footer-grid">
       <div class="footer-col">
-        <a href="/" class="logo" style="margin-bottom: 0.5rem;">BRAND EXPAND</a>
-        <p style="color: var(--grey-500); font-size: 0.875rem; margin-top: 0.5rem;">We help brands grow online.</p>
+        <h4>&nbsp;</h4>
+        <a href="/" class="logo">BRAND EXPAND</a>
+        <p>We help brands grow online.</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
