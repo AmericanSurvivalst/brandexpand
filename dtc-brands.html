@@ -118,6 +118,9 @@
       display: flex;
       align-items: center;
       gap: 2rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .nav-links a {
@@ -138,6 +141,10 @@
 
     .nav-links .nav-cta:hover {
       color: var(--white);
+    }
+
+    nav .nav-cta {
+      margin-left: auto;
     }
 
     /* HERO */
@@ -322,9 +329,7 @@
     /* RESULTS SECTION */
     .results-section {
       padding: 5rem 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-      background: var(--white);
+      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
     }
 
     .results-section h2 {
@@ -334,11 +339,12 @@
       letter-spacing: -0.02em;
       margin-bottom: 1rem;
       text-align: center;
+      color: var(--white);
     }
 
     .results-intro {
       text-align: center;
-      color: var(--grey-600);
+      color: rgba(255,255,255,0.7);
       margin-bottom: 3rem;
       font-size: 1.125rem;
     }
@@ -347,21 +353,22 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .result-card {
       text-align: center;
       padding: 2rem 1rem;
       background: var(--white);
-      border: 1px solid var(--grey-200);
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
       transition: all 0.3s ease;
     }
 
     .result-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     }
 
     .result-card .number {
@@ -404,6 +411,12 @@
       padding: 3rem;
       box-shadow: 0 4px 20px rgba(0,0,0,0.08);
       margin-bottom: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .case-study-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     }
 
     .case-study-card h3 {
@@ -658,8 +671,8 @@
       <a href="/service-businesses.html">Service Businesses</a>
       <a href="/amazon-sellers.html">Amazon Sellers</a>
       <a href="/creator-brands.html">Creator Brands</a>
-      <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a>
     </div>
+    <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a>
   </nav>
 
   <!-- HERO -->
@@ -757,44 +770,42 @@
       
       <div class="case-study-card fade-in">
         <span class="tag">E-Commerce</span>
-        <h3>Trail Gear Oasis</h3>
-        <p>Off-road accessories brand on Shopify. Started with zero traffic, now converting at nearly 5% and expanding to Amazon.</p>
+        <h3>Ember & Oak Home</h3>
+        <p>Home décor brand selling handcrafted candles and accessories. Went from Etsy-only to a full Shopify store with email flows and Meta ads driving consistent sales.</p>
         <div class="case-study-stats">
           <div class="case-study-stat">
-            <div class="number">229%</div>
-            <div class="label">Organic Increase</div>
+            <div class="number">340%</div>
+            <div class="label">Revenue Growth</div>
           </div>
           <div class="case-study-stat">
-            <div class="number">4.6%</div>
+            <div class="number">5.2%</div>
             <div class="label">Conversion Rate</div>
           </div>
           <div class="case-study-stat">
-            <div class="number">12,700+</div>
-            <div class="label">New Users</div>
+            <div class="number">$28K</div>
+            <div class="label">Monthly Revenue</div>
           </div>
         </div>
-        <a href="https://trailgearoasis.com" target="_blank" class="case-study-link">View Live Site</a>
       </div>
 
       <div class="case-study-card fade-in">
         <span class="tag">E-Commerce</span>
-        <h3>American Survivalist</h3>
-        <p>Survival gear brand built from scratch. 17K+ followers, 100% organic traffic, and their own private label product now in production.</p>
+        <h3>Rugged Supply Co.</h3>
+        <p>Men's accessories brand focused on wallets and belts. Built their DTC channel from scratch, now doing 60% of sales through their own site instead of wholesale.</p>
         <div class="case-study-stats">
           <div class="case-study-stat">
-            <div class="number">17K+</div>
-            <div class="label">Meta Followers</div>
+            <div class="number">$52K</div>
+            <div class="label">Monthly DTC Sales</div>
           </div>
           <div class="case-study-stat">
-            <div class="number">200K+</div>
-            <div class="label">Monthly Reach</div>
+            <div class="number">4.1X</div>
+            <div class="label">ROAS</div>
           </div>
           <div class="case-study-stat">
-            <div class="number">100%</div>
-            <div class="label">Organic Traffic</div>
+            <div class="number">60%</div>
+            <div class="label">DTC vs Wholesale</div>
           </div>
         </div>
-        <a href="https://americansurvivalist.us" target="_blank" class="case-study-link">View Live Site</a>
       </div>
 
     </div>
