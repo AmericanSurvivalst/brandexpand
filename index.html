@@ -144,6 +144,29 @@
       transform: translateY(-2px);
     }
 
+    .nav-buttons {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .nav-login {
+      background: transparent;
+      color: var(--accent);
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.875rem;
+      border-radius: 8px;
+      border: 1px solid var(--accent);
+      transition: all 0.3s;
+    }
+
+    .nav-login:hover {
+      background: var(--accent-light);
+      transform: translateY(-2px);
+    }
+
     /* Mobile menu button */
     .mobile-menu-btn {
       display: none;
@@ -1202,7 +1225,10 @@
       <li><a href="#ads">Ad Services</a></li>
       <li><a href="#marketplace">3rd Party</a></li>
     </ul>
-    <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a>
+    <div class="nav-buttons">
+      <a href="https://client.brandexpand.digital/sign-in" class="nav-login">Client Login</a>
+      <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a>
+    </div>
     <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
       <span></span>
       <span></span>
@@ -1217,6 +1243,7 @@
     <a href="#plans" class="mobile-link">Plans</a>
     <a href="#ads" class="mobile-link">Ad Services</a>
     <a href="#marketplace" class="mobile-link">3rd Party</a>
+    <a href="https://client.brandexpand.digital/sign-in" class="mobile-link">Client Login</a>
     <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="mobile-link" style="color: var(--accent); font-weight: 600;">Contact</a>
   </div>
 
