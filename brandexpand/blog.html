@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2M9YQY405H"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2M9YQY405H');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Brand Expand</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta name="description" content="Marketing tips for service businesses, contractors, and local companies in Massachusetts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#1a1a2e;--white:#fefefe;--grey-100:#f8f9fa;--grey-200:#e9ecef;--grey-300:#dee2e6;--grey-400:#adb5bd;--grey-500:#6c757d;--grey-600:#495057;--accent:#4f46e5;--accent-hover:#4338ca}
+    *{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--black);line-height:1.6}
+    .fade-in{opacity:0;transform:translateY(30px);transition:opacity 0.6s,transform 0.6s}.fade-in.visible{opacity:1;transform:translateY(0)}
+    .stagger-1{transition-delay:0.1s}.stagger-2{transition-delay:0.2s}.stagger-3{transition-delay:0.3s}.stagger-4{transition-delay:0.4s}
+    .nav-links{display:flex;gap:2rem;list-style:none}.nav-links a{color:var(--grey-600);text-decoration:none;font-size:0.9rem;font-weight:500}.nav-links a:hover{color:var(--accent)}
+    .nav-buttons{display:flex;gap:0.75rem;align-items:center}.nav-login{color:var(--grey-600);text-decoration:none;font-size:0.875rem;font-weight:500;padding:0.5rem 1rem;border:1px solid var(--grey-300);border-radius:8px}.nav-login:hover{border-color:var(--accent);color:var(--accent)}
+    @media(max-width:768px){.nav-links,.nav-login{display:none}}
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(254,254,254,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--grey-200);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+    .logo{font-family:'Inter',sans-serif;font-weight:800;font-size:1.25rem;color:var(--black);text-decoration:none}.nav-cta{background:var(--accent);color:var(--white);padding:0.75rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.875rem}
+    .hero{padding:10rem 2rem 4rem;text-align:center;background:linear-gradient(135deg,var(--black) 0%,#2d2d5a 100%)}.hero h1{font-family:'Inter',sans-serif;font-size:3rem;font-weight:800;color:var(--white);margin-bottom:1rem}.hero p{color:rgba(255,255,255,0.8);font-size:1.25rem;max-width:600px;margin:0 auto}
+    .blog-section{padding:4rem 2rem;max-width:1200px;margin:0 auto}
+    .search-container{max-width:500px;margin:0 auto 2rem}.search-input{width:100%;padding:1rem 1.5rem;border:2px solid var(--grey-200);border-radius:100px;font-size:1rem;font-family:inherit;outline:none}.search-input:focus{border-color:var(--accent)}
+    
+    .blog-filters{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;justify-content:center}
+    .filter-btn{background:var(--grey-100);border:none;padding:0.5rem 1rem;border-radius:100px;font-size:0.75rem;cursor:pointer;transition:all 0.3s}.filter-btn:hover,.filter-btn.active{background:var(--accent);color:var(--white)}.filter-divider{color:var(--grey-300);margin:0 0.5rem}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem}
+    .blog-card{background:var(--white);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;border:1px solid var(--grey-200);transition:all 0.3s}.blog-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,0.1)}.blog-card.hidden{display:none}
+    .blog-image{height:140px;background:linear-gradient(135deg,var(--accent) 0%,#7c3aed 100%);display:flex;align-items:center;justify-content:center;font-size:3rem}
+    .blog-content{padding:1.25rem}.blog-category{display:inline-block;background:var(--grey-100);color:var(--grey-600);padding:0.25rem 0.75rem;border-radius:100px;font-size:0.7rem;font-weight:600;text-transform:uppercase;margin-bottom:0.5rem}
+    .blog-content h3{font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:0.5rem;line-height:1.3}.blog-content p{color:var(--grey-500);font-size:0.85rem;margin-bottom:0.75rem}
+    .blog-meta{display:flex;justify-content:space-between;font-size:0.75rem;color:var(--grey-400)}.read-more{color:var(--accent);font-weight:600}
+    footer{background:var(--black);color:var(--white);padding:4rem 2rem}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem;max-width:900px;margin:0 auto}
+    .footer-col h4{font-size:0.875rem;font-weight:700;margin-bottom:1rem}.footer-col a{display:block;color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.875rem;margin-bottom:0.5rem}.footer-col a:hover{color:var(--white)}
+    .footer-bottom{margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center}.footer-bottom p{color:rgba(255,255,255,0.5);font-size:0.75rem}
+    @media(max-width:768px){.hero h1{font-size:2rem}.blog-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;text-align:center}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="logo">BRAND EXPAND</a>
+    <ul class="nav-links"><li><a href="/blog">Blog</a></li><li><a href="/service-businesses">Services</a></li><li><a href="/about">About</a></li></ul>
+    <div class="nav-buttons"><a href="https://client.brandexpand.digital/sign-in" class="nav-login">Client Login</a><a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a></div>
+  </nav>
+  <section class="hero"><h1>The Brand Expand Blog</h1><p>Marketing tips for service businesses, contractors, and local companies.</p></section>
+  <section class="blog-section">
+    <div class="search-container"><input type="text" id="blogSearch" class="search-input" placeholder="Search articles..."></div>
+    <div class="blog-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="local-seo">Local SEO</button>
+      <button class="filter-btn" data-filter="lead-generation">Lead Gen</button>
+      <button class="filter-btn" data-filter="paid-ads">Paid Ads</button>
+      <button class="filter-btn" data-filter="business">Business</button>
+      <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+      <span class="filter-divider">|</span>
+      
+    </div>
+    <div class="blog-grid">
+
+      <a href="/blog/local-seo/competitors-show-up-google-you-dont.html" class="blog-card fade-in" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>Why Your Competitors Show Up on Google and You Don't</h3>
+          <p>The real reasons your competition outranks you in local search and how to fix it.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/google-business-profile-setup-guide.html" class="blog-card fade-in stagger-2" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>Google Business Profile: Complete Setup Guide for 2025</h3>
+          <p>Step-by-step guide to setting up and optimizing your Google Business Profile to get found by local c</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/how-long-seo-take-local-business.html" class="blog-card fade-in stagger-3" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>How Long Does SEO Take to Work for Local Businesses?</h3>
+          <p>Realistic timelines for local SEO results and what to expect in the first 3, 6, and 12 months.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/local-seo-2025.html" class="blog-card fade-in stagger-4" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>Local SEO in 2025: What Actually Moves the Needle</h3>
+          <p>Google Business Profile hacks, review strategies, and the on-page basics most local businesses ignor</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/local-seo-electricians.html" class="blog-card fade-in stagger-1" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>Local SEO for Electricians</h3>
+          <p>How electricians can get more leads through Google and build a steady pipeline of local customers.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/local-seo-hvac-companies.html" class="blog-card fade-in stagger-2" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>Local SEO for HVAC Companies</h3>
+          <p>How HVAC companies can dominate local search and get more heating and cooling leads year-round.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/local-seo-landscapers.html" class="blog-card fade-in stagger-3" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>Local SEO for Landscapers</h3>
+          <p>How landscaping companies can get found online and book more lawn care and landscaping jobs.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/local-seo-plumbers.html" class="blog-card fade-in stagger-4" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>Local SEO for Plumbers: A Complete Guide</h3>
+          <p>Everything plumbers need to know about getting found online and generating leads through local searc</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/local-seo-roofers.html" class="blog-card fade-in stagger-1" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>Local SEO for Roofers</h3>
+          <p>How roofing companies can dominate local search and get more leads for repairs and replacements.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/rank-number-1-google-maps.html" class="blog-card fade-in stagger-2" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>How to Rank #1 in Google Maps for Your City</h3>
+          <p>The local SEO strategies that actually work to get your business to the top of Google Maps results.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo/what-is-a-citation-local-seo.html" class="blog-card fade-in stagger-3" data-category="local-seo">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Local SEO</span>
+          <h3>What is a Citation and Why Does It Matter?</h3>
+          <p>Understanding local citations and how they help your business rank in Google Maps.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/5-pages-service-business-needs.html" class="blog-card fade-in stagger-4" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>The Only 5 Pages Your Service Business Website Needs</h3>
+          <p>Stop overcomplicating your website. These five pages generate leads.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/angi-thumbtack-worth-it.html" class="blog-card fade-in stagger-1" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>Should You Buy Leads from Angi or Thumbtack?</h3>
+          <p>An honest look at whether lead generation services are worth it for contractors.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/contact-forms-vs-phone-calls.html" class="blog-card fade-in stagger-2" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>Contact Forms vs Phone Calls: What Converts Better?</h3>
+          <p>Should you push visitors to call or fill out a form?</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/door-hangers-yard-signs-local-marketing.html" class="blog-card fade-in stagger-3" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>Door Hangers, Yard Signs, and Local Marketing That Works</h3>
+          <p>Old school marketing tactics that still work for local service businesses.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/follow-up-leads-without-annoying.html" class="blog-card fade-in stagger-4" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>How to Follow Up with Leads Without Being Annoying</h3>
+          <p>The right way to follow up with potential customers without killing your chances.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/get-more-google-reviews.html" class="blog-card fade-in stagger-1" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>How to Get More Google Reviews Without Being Pushy</h3>
+          <p>Proven strategies to generate more Google reviews from happy customers naturally.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/get-referrals-every-job.html" class="blog-card fade-in stagger-2" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>How to Get Referrals from Every Job</h3>
+          <p>Turn every completed job into a source of new customers.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/get-reviews-without-begging.html" class="blog-card fade-in stagger-3" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>How to Get Reviews Without Begging for Them</h3>
+          <p>A simple system that turns happy customers into 5-star reviews. Automatically.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/lead-generation-contractors.html" class="blog-card fade-in stagger-4" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>Best Lead Generation Strategies for Contractors</h3>
+          <p>Proven ways for contractors to generate leads without relying on expensive lead services.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/website-vs-facebook-page.html" class="blog-card fade-in stagger-1" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>Website vs Facebook Page: What Do You Actually Need?</h3>
+          <p>Should your service business have a website, a Facebook page, or both?</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/lead-generation/why-website-not-getting-calls.html" class="blog-card fade-in stagger-2" data-category="lead-generation">
+        <div class="blog-image">📞</div>
+        <div class="blog-content">
+          <span class="blog-category">Lead Gen</span>
+          <h3>Why Your Website Isn't Getting Calls</h3>
+          <p>Common website mistakes that kill your leads and how to fix them.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/ad-copy-formulas.html" class="blog-card fade-in stagger-3" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>5 Ad Copy Formulas That Convert (With Examples)</h3>
+          <p>Proven copywriting frameworks you can steal for your next ad campaign.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/facebook-ads-home-service-businesses.html" class="blog-card fade-in stagger-4" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>Facebook Ads for Home Service Businesses</h3>
+          <p>How to use Facebook ads to generate leads for your service business.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/facebook-ads-not-converting.html" class="blog-card fade-in stagger-1" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>Why Your Facebook Ads Aren't Converting</h3>
+          <p>Most businesses waste money on Meta ads because they skip the fundamentals. Here's the checklist tha</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/google-ads-contractors-guide.html" class="blog-card fade-in stagger-2" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>Google Ads for Contractors: Beginner's Guide</h3>
+          <p>How to set up and run Google Ads for your contracting business without wasting money.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/google-ads-ecommerce.html" class="blog-card fade-in stagger-3" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>Google Ads for E-Commerce: The Beginner's Playbook</h3>
+          <p>How to set up Google Ads that actually drive sales. A step-by-step guide for e-commerce brands.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/google-local-service-ads-worth-it.html" class="blog-card fade-in stagger-4" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>Google Local Service Ads: Worth It or Not?</h3>
+          <p>An honest review of Google's pay-per-lead program for service businesses.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/how-much-spend-google-ads.html" class="blog-card fade-in stagger-1" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>How Much Should a Contractor Spend on Google Ads?</h3>
+          <p>Realistic budgets for Google Ads based on your service area and competition.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/meta-ads-creative-testing.html" class="blog-card fade-in stagger-2" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>How to Test Meta Ad Creatives Without Wasting Money</h3>
+          <p>A systematic approach to creative testing that finds winners faster and kills losers sooner.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/retargeting-strategy-guide.html" class="blog-card fade-in stagger-3" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>Retargeting 101: The Strategy That Turns Browsers Into Buyer</h3>
+          <p>How to build retargeting campaigns that convert warm audiences without being annoying.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/scaling-ads-without-killing-roas.html" class="blog-card fade-in stagger-4" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>How to Scale Ads Without Killing Your ROAS</h3>
+          <p>The systematic approach to increasing ad spend while maintaining profitability.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/tiktok-ads-beginners.html" class="blog-card fade-in stagger-1" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>TikTok Ads for Beginners: What Actually Works in 2025</h3>
+          <p>How to run TikTok ads that feel native and convert. The platform is different. Your strategy should </p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/paid-ads/track-where-leads-come-from.html" class="blog-card fade-in stagger-2" data-category="paid-ads">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>How to Track Where Your Leads Come From</h3>
+          <p>Simple ways to know which marketing is working and which is wasting money.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/business/7-metrics-that-matter.html" class="blog-card fade-in stagger-3" data-category="business">
+        <div class="blog-image">💼</div>
+        <div class="blog-content">
+          <span class="blog-category">Business</span>
+          <h3>The Only 7 Metrics That Matter for Your Online Business</h3>
+          <p>Forget vanity metrics. Track these numbers weekly and youll always know where you stand.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/business/best-crm-small-contractors.html" class="blog-card fade-in stagger-4" data-category="business">
+        <div class="blog-image">💼</div>
+        <div class="blog-content">
+          <span class="blog-category">Business</span>
+          <h3>Best CRM for Small Contractors</h3>
+          <p>Comparing the top customer relationship management tools for service businesses.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/business/handle-bad-reviews-professionally.html" class="blog-card fade-in stagger-1" data-category="business">
+        <div class="blog-image">💼</div>
+        <div class="blog-content">
+          <span class="blog-category">Business</span>
+          <h3>How to Handle Bad Reviews Professionally</h3>
+          <p>Turn negative reviews into opportunities to show your professionalism.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/business/hire-first-employee-vs-stay-solo.html" class="blog-card fade-in stagger-2" data-category="business">
+        <div class="blog-image">💼</div>
+        <div class="blog-content">
+          <span class="blog-category">Business</span>
+          <h3>When to Hire Your First Employee vs Stay Solo</h3>
+          <p>Signs it's time to grow your team and how to make the transition.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/business/pick-right-marketing-channel.html" class="blog-card fade-in stagger-3" data-category="business">
+        <div class="blog-image">💼</div>
+        <div class="blog-content">
+          <span class="blog-category">Business</span>
+          <h3>How to Pick the Right Marketing Channel for Your Business</h3>
+          <p>SEO vs Paid Ads vs Social. A framework to decide where to put your time and money.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/business/price-services-profit.html" class="blog-card fade-in stagger-4" data-category="business">
+        <div class="blog-image">💼</div>
+        <div class="blog-content">
+          <span class="blog-category">Business</span>
+          <h3>How to Price Your Services for Profit</h3>
+          <p>Stop undercharging. Here's how to price your work so you actually make money.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/business/scheduling-software-service-businesses.html" class="blog-card fade-in stagger-1" data-category="business">
+        <div class="blog-image">💼</div>
+        <div class="blog-content">
+          <span class="blog-category">Business</span>
+          <h3>Scheduling Software for Service Businesses</h3>
+          <p>The best tools to manage your calendar, jobs, and dispatching.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/business/zero-to-10k-timeline.html" class="blog-card fade-in stagger-2" data-category="business">
+        <div class="blog-image">💼</div>
+        <div class="blog-content">
+          <span class="blog-category">Business</span>
+          <h3>From $0 to $10K/Month: The Realistic Timeline</h3>
+          <p>What to expect in months 1-3, 3-6, and beyond. No hype, just the work it actually takes.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/amazon-ppc-auto-campaigns.html" class="blog-card fade-in stagger-3" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>Amazon PPC: How to Stop Bleeding Money on Auto Campaigns</h3>
+          <p>Auto campaigns are easy to set up and easy to lose money on. Heres how to run them profitably.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/content-calendar-template.html" class="blog-card fade-in stagger-4" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>The Content Calendar We Use for Every Client</h3>
+          <p>Plan a month of content in one sitting. Download our template and stop scrambling for ideas.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/ecommerce-email-flows.html" class="blog-card fade-in stagger-1" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>The 5 Email Flows Every E-Commerce Store Needs</h3>
+          <p>Set up these automated email flows once and watch them generate revenue on autopilot.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/ecommerce-photography-tips.html" class="blog-card fade-in stagger-2" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>Product Photography on a Budget: What Actually Matters</h3>
+          <p>You dont need a $5000 camera to take great product photos. Here's what actually moves the needle.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/posting-every-day-killing-brand.html" class="blog-card fade-in stagger-3" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>Posting Every Day is Killing Your Brand</h3>
+          <p>Quality over quantity isnt just a cliche. Its the algorithms preference.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/pricing-psychology-ecommerce.html" class="blog-card fade-in stagger-4" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>Pricing Psychology: Small Changes That Drive Big Results</h3>
+          <p>How to price your products for maximum conversions. The science behind what makes people buy.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/product-page-conversions.html" class="blog-card fade-in stagger-1" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>How to Build Product Pages That Actually Convert</h3>
+          <p>The anatomy of a high-converting product page. Every element that matters and why.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/reduce-cart-abandonment.html" class="blog-card fade-in stagger-2" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>7 Ways to Reduce Cart Abandonment Today</h3>
+          <p>The average cart abandonment rate is 70%. Here's how to win back those lost sales.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/shipping-strategy-ecommerce.html" class="blog-card fade-in stagger-3" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>The Shipping Strategy That Increased Our AOV by 34%</h3>
+          <p>How we used free shipping thresholds to boost average order value without hurting margins.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/shopify-apps-you-need.html" class="blog-card fade-in stagger-4" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>The Only 5 Shopify Apps You Actually Need</h3>
+          <p>Stop paying for 30 apps. These five will cover 90% of what you need to run a profitable store.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/shopify-vs-woocommerce.html" class="blog-card fade-in stagger-1" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>Shopify vs WooCommerce: Which One is Right for You</h3>
+          <p>A no-BS comparison of the two biggest e-commerce platforms. We break down costs, features, and who s</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/website-3-seconds.html" class="blog-card fade-in stagger-2" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>Your Website Has 3 Seconds. Here's How to Not Blow It.</h3>
+          <p>Above-the-fold design principles that turn bounces into buyers.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/ecommerce/welcome-sequence-47k.html" class="blog-card fade-in stagger-3" data-category="ecommerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>The Welcome Sequence That Made Us $47K in 30 Days</h3>
+          <p>A 5-email welcome flow that turns first-time visitors into repeat buyers. Steal the exact template.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/wrentham/best-electrician-wrentham-ma.html" class="blog-card fade-in stagger-4" data-category="local-wrentham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Wrentham</span>
+          <h3>Best Electrician in Wrentham, MA (2025)</h3>
+          <p>Find the best service providers in Wrentham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/wrentham/best-hvac-wrentham-ma.html" class="blog-card fade-in stagger-1" data-category="local-wrentham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Wrentham</span>
+          <h3>Best HVAC Contractor in Wrentham, MA (2025)</h3>
+          <p>Find the best service providers in Wrentham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/wrentham/best-landscaper-wrentham-ma.html" class="blog-card fade-in stagger-2" data-category="local-wrentham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Wrentham</span>
+          <h3>Best Landscaper in Wrentham, MA (2025)</h3>
+          <p>Find the best service providers in Wrentham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/wrentham/best-plumber-wrentham-ma.html" class="blog-card fade-in stagger-3" data-category="local-wrentham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Wrentham</span>
+          <h3>Best Plumber in Wrentham, MA (2025)</h3>
+          <p>Find the best service providers in Wrentham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/wrentham/best-roofer-wrentham-ma.html" class="blog-card fade-in stagger-4" data-category="local-wrentham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Wrentham</span>
+          <h3>Best Roofer in Wrentham, MA (2025)</h3>
+          <p>Find the best service providers in Wrentham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/franklin/best-electrician-franklin-ma.html" class="blog-card fade-in stagger-1" data-category="local-franklin">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Franklin</span>
+          <h3>Best Electrician in Franklin, MA (2025)</h3>
+          <p>Find the best service providers in Franklin, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/franklin/best-hvac-franklin-ma.html" class="blog-card fade-in stagger-2" data-category="local-franklin">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Franklin</span>
+          <h3>Best HVAC Contractor in Franklin, MA (2025)</h3>
+          <p>Find the best service providers in Franklin, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/franklin/best-landscaper-franklin-ma.html" class="blog-card fade-in stagger-3" data-category="local-franklin">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Franklin</span>
+          <h3>Best Landscaper in Franklin, MA (2025)</h3>
+          <p>Find the best service providers in Franklin, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/franklin/best-plumber-franklin-ma.html" class="blog-card fade-in stagger-4" data-category="local-franklin">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Franklin</span>
+          <h3>Best Plumber in Franklin, MA (2025)</h3>
+          <p>Find the best service providers in Franklin, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/franklin/best-roofer-franklin-ma.html" class="blog-card fade-in stagger-1" data-category="local-franklin">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Franklin</span>
+          <h3>Best Roofer in Franklin, MA (2025)</h3>
+          <p>Find the best service providers in Franklin, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/foxborough/best-electrician-foxborough-ma.html" class="blog-card fade-in stagger-2" data-category="local-foxborough">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Foxborough</span>
+          <h3>Best Electrician in Foxborough, MA (2025)</h3>
+          <p>Find the best service providers in Foxborough, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/foxborough/best-hvac-foxborough-ma.html" class="blog-card fade-in stagger-3" data-category="local-foxborough">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Foxborough</span>
+          <h3>Best HVAC Contractor in Foxborough, MA (2025)</h3>
+          <p>Find the best service providers in Foxborough, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/foxborough/best-landscaper-foxborough-ma.html" class="blog-card fade-in stagger-4" data-category="local-foxborough">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Foxborough</span>
+          <h3>Best Landscaper in Foxborough, MA (2025)</h3>
+          <p>Find the best service providers in Foxborough, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/foxborough/best-plumber-foxborough-ma.html" class="blog-card fade-in stagger-1" data-category="local-foxborough">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Foxborough</span>
+          <h3>Best Plumber in Foxborough, MA (2025)</h3>
+          <p>Find the best service providers in Foxborough, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/foxborough/best-roofer-foxborough-ma.html" class="blog-card fade-in stagger-2" data-category="local-foxborough">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Foxborough</span>
+          <h3>Best Roofer in Foxborough, MA (2025)</h3>
+          <p>Find the best service providers in Foxborough, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norwood/best-electrician-norwood-ma.html" class="blog-card fade-in stagger-3" data-category="local-norwood">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norwood</span>
+          <h3>Best Electrician in Norwood, MA (2025)</h3>
+          <p>Find the best service providers in Norwood, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norwood/best-hvac-norwood-ma.html" class="blog-card fade-in stagger-4" data-category="local-norwood">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norwood</span>
+          <h3>Best HVAC Contractor in Norwood, MA (2025)</h3>
+          <p>Find the best service providers in Norwood, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norwood/best-landscaper-norwood-ma.html" class="blog-card fade-in stagger-1" data-category="local-norwood">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norwood</span>
+          <h3>Best Landscaper in Norwood, MA (2025)</h3>
+          <p>Find the best service providers in Norwood, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norwood/best-plumber-norwood-ma.html" class="blog-card fade-in stagger-2" data-category="local-norwood">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norwood</span>
+          <h3>Best Plumber in Norwood, MA (2025)</h3>
+          <p>Find the best service providers in Norwood, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norwood/best-roofer-norwood-ma.html" class="blog-card fade-in stagger-3" data-category="local-norwood">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norwood</span>
+          <h3>Best Roofer in Norwood, MA (2025)</h3>
+          <p>Find the best service providers in Norwood, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/attleboro/best-electrician-attleboro-ma.html" class="blog-card fade-in stagger-4" data-category="local-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Attleboro</span>
+          <h3>Best Electrician in Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/attleboro/best-hvac-attleboro-ma.html" class="blog-card fade-in stagger-1" data-category="local-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Attleboro</span>
+          <h3>Best HVAC Contractor in Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/attleboro/best-landscaper-attleboro-ma.html" class="blog-card fade-in stagger-2" data-category="local-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Attleboro</span>
+          <h3>Best Landscaper in Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/attleboro/best-plumber-attleboro-ma.html" class="blog-card fade-in stagger-3" data-category="local-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Attleboro</span>
+          <h3>Best Plumber in Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/attleboro/best-roofer-attleboro-ma.html" class="blog-card fade-in stagger-4" data-category="local-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Attleboro</span>
+          <h3>Best Roofer in Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/plainville/best-electrician-plainville-ma.html" class="blog-card fade-in stagger-1" data-category="local-plainville">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Plainville</span>
+          <h3>Best Electrician in Plainville, MA (2025)</h3>
+          <p>Find the best service providers in Plainville, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/plainville/best-hvac-plainville-ma.html" class="blog-card fade-in stagger-2" data-category="local-plainville">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Plainville</span>
+          <h3>Best HVAC Contractor in Plainville, MA (2025)</h3>
+          <p>Find the best service providers in Plainville, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/plainville/best-landscaper-plainville-ma.html" class="blog-card fade-in stagger-3" data-category="local-plainville">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Plainville</span>
+          <h3>Best Landscaper in Plainville, MA (2025)</h3>
+          <p>Find the best service providers in Plainville, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/plainville/best-plumber-plainville-ma.html" class="blog-card fade-in stagger-4" data-category="local-plainville">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Plainville</span>
+          <h3>Best Plumber in Plainville, MA (2025)</h3>
+          <p>Find the best service providers in Plainville, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/plainville/best-roofer-plainville-ma.html" class="blog-card fade-in stagger-1" data-category="local-plainville">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Plainville</span>
+          <h3>Best Roofer in Plainville, MA (2025)</h3>
+          <p>Find the best service providers in Plainville, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norfolk/best-electrician-norfolk-ma.html" class="blog-card fade-in stagger-2" data-category="local-norfolk">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norfolk</span>
+          <h3>Best Electrician in Norfolk, MA (2025)</h3>
+          <p>Find the best service providers in Norfolk, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norfolk/best-hvac-norfolk-ma.html" class="blog-card fade-in stagger-3" data-category="local-norfolk">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norfolk</span>
+          <h3>Best HVAC Contractor in Norfolk, MA (2025)</h3>
+          <p>Find the best service providers in Norfolk, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norfolk/best-landscaper-norfolk-ma.html" class="blog-card fade-in stagger-4" data-category="local-norfolk">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norfolk</span>
+          <h3>Best Landscaper in Norfolk, MA (2025)</h3>
+          <p>Find the best service providers in Norfolk, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norfolk/best-plumber-norfolk-ma.html" class="blog-card fade-in stagger-1" data-category="local-norfolk">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norfolk</span>
+          <h3>Best Plumber in Norfolk, MA (2025)</h3>
+          <p>Find the best service providers in Norfolk, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/norfolk/best-roofer-norfolk-ma.html" class="blog-card fade-in stagger-2" data-category="local-norfolk">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Norfolk</span>
+          <h3>Best Roofer in Norfolk, MA (2025)</h3>
+          <p>Find the best service providers in Norfolk, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/bellingham/best-electrician-bellingham-ma.html" class="blog-card fade-in stagger-3" data-category="local-bellingham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Bellingham</span>
+          <h3>Best Electrician in Bellingham, MA (2025)</h3>
+          <p>Find the best service providers in Bellingham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/bellingham/best-hvac-bellingham-ma.html" class="blog-card fade-in stagger-4" data-category="local-bellingham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Bellingham</span>
+          <h3>Best HVAC Contractor in Bellingham, MA (2025)</h3>
+          <p>Find the best service providers in Bellingham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/bellingham/best-landscaper-bellingham-ma.html" class="blog-card fade-in stagger-1" data-category="local-bellingham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Bellingham</span>
+          <h3>Best Landscaper in Bellingham, MA (2025)</h3>
+          <p>Find the best service providers in Bellingham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/bellingham/best-plumber-bellingham-ma.html" class="blog-card fade-in stagger-2" data-category="local-bellingham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Bellingham</span>
+          <h3>Best Plumber in Bellingham, MA (2025)</h3>
+          <p>Find the best service providers in Bellingham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/bellingham/best-roofer-bellingham-ma.html" class="blog-card fade-in stagger-3" data-category="local-bellingham">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Bellingham</span>
+          <h3>Best Roofer in Bellingham, MA (2025)</h3>
+          <p>Find the best service providers in Bellingham, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/mansfield/best-electrician-mansfield-ma.html" class="blog-card fade-in stagger-4" data-category="local-mansfield">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Mansfield</span>
+          <h3>Best Electrician in Mansfield, MA (2025)</h3>
+          <p>Find the best service providers in Mansfield, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/mansfield/best-hvac-mansfield-ma.html" class="blog-card fade-in stagger-1" data-category="local-mansfield">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Mansfield</span>
+          <h3>Best HVAC Contractor in Mansfield, MA (2025)</h3>
+          <p>Find the best service providers in Mansfield, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/mansfield/best-landscaper-mansfield-ma.html" class="blog-card fade-in stagger-2" data-category="local-mansfield">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Mansfield</span>
+          <h3>Best Landscaper in Mansfield, MA (2025)</h3>
+          <p>Find the best service providers in Mansfield, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/mansfield/best-plumber-mansfield-ma.html" class="blog-card fade-in stagger-3" data-category="local-mansfield">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Mansfield</span>
+          <h3>Best Plumber in Mansfield, MA (2025)</h3>
+          <p>Find the best service providers in Mansfield, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/mansfield/best-roofer-mansfield-ma.html" class="blog-card fade-in stagger-4" data-category="local-mansfield">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">Mansfield</span>
+          <h3>Best Roofer in Mansfield, MA (2025)</h3>
+          <p>Find the best service providers in Mansfield, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/north-attleboro/best-electrician-north-attleboro-ma.html" class="blog-card fade-in stagger-1" data-category="local-north-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">North Attleboro</span>
+          <h3>Best Electrician in North Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in North Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/north-attleboro/best-hvac-north-attleboro-ma.html" class="blog-card fade-in stagger-2" data-category="local-north-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">North Attleboro</span>
+          <h3>Best HVAC Contractor in North Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in North Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/north-attleboro/best-landscaper-north-attleboro-ma.html" class="blog-card fade-in stagger-3" data-category="local-north-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">North Attleboro</span>
+          <h3>Best Landscaper in North Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in North Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/north-attleboro/best-plumber-north-attleboro-ma.html" class="blog-card fade-in stagger-4" data-category="local-north-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">North Attleboro</span>
+          <h3>Best Plumber in North Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in North Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local/north-attleboro/best-roofer-north-attleboro-ma.html" class="blog-card fade-in stagger-1" data-category="local-north-attleboro">
+        <div class="blog-image">📍</div>
+        <div class="blog-content">
+          <span class="blog-category">North Attleboro</span>
+          <h3>Best Roofer in North Attleboro, MA (2025)</h3>
+          <p>Find the best service providers in North Attleboro, MA.</p>
+          <div class="blog-meta">
+            <span>2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col"><a href="/" class="logo" style="color:var(--white)">BRAND EXPAND</a><p style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin-top:0.5rem">We help brands grow online.</p></div>
+      <div class="footer-col"><h4>Services</h4><a href="/service-businesses">Service Businesses</a><a href="/dtc-brands">DTC Brands</a><a href="/amazon-sellers">Amazon Sellers</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about">About</a><a href="/case-studies">Case Studies</a><a href="/blog">Blog</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Brand Expand. All rights reserved.</p></div>
+  </footer>
+  <script>
+    const searchInput = document.getElementById('blogSearch');
+    const blogCards = document.querySelectorAll('.blog-card');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      blogCards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const desc = card.querySelector('p').textContent.toLowerCase();
+        const cat = card.querySelector('.blog-category').textContent.toLowerCase();
+        card.classList.toggle('hidden', query && !title.includes(query) && !desc.includes(query) && !cat.includes(query));
+      });
+      if (query) filterBtns.forEach(b => b.classList.remove('active'));
+    });
+    
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        searchInput.value = '';
+        blogCards.forEach(card => {
+          card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
+        });
+      });
+    });
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, {threshold: 0.1});
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
