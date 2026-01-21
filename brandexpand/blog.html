@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2M9YQY405H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2M9YQY405H');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Brand Expand</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon-512.png">
+  
+  <meta name="description" content="Digital marketing tips, strategies, and insights to help your business grow online.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --black: #1a1a2e;
+      --white: #fefefe;
+      --grey-100: #f8f9fa;
+      --grey-200: #e9ecef;
+      --grey-300: #dee2e6;
+      --grey-400: #adb5bd;
+      --grey-500: #6c757d;
+      --grey-600: #495057;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .stagger-1 { transition-delay: 0.1s; }
+    .stagger-2 { transition-delay: 0.2s; }
+    .stagger-3 { transition-delay: 0.3s; }
+    .stagger-4 { transition-delay: 0.4s; }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(254,254,254,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--grey-200);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    .nav-cta {
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: all 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 10rem 2rem 5rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
+    }
+
+    .hero h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      color: var(--white);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* BLOG GRID */
+    .blog-section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .blog-filters {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 0.625rem 1.25rem;
+      border: 1px solid var(--grey-200);
+      border-radius: 100px;
+      background: var(--white);
+      color: var(--grey-600);
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--white);
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .blog-card.hidden {
+      display: none;
+    }
+
+    @media (max-width: 1024px) {
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .blog-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--accent) 0%, #6366f1 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+    }
+
+    .blog-content {
+      padding: 1.5rem;
+    }
+
+    .blog-category {
+      display: inline-block;
+      background: var(--grey-100);
+      color: var(--accent);
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    .blog-card h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+      color: var(--black);
+    }
+
+    .blog-card p {
+      color: var(--grey-600);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--grey-500);
+    }
+
+    .read-more {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      padding: 5rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--black) 0%, #2d2d5a 100%);
+    }
+
+    .cta-section h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--white);
+      color: var(--black);
+      padding: 1.25rem 3rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: var(--grey-100);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--black);
+      color: var(--white);
+      padding: 4rem 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-col .logo {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--white);
+    }
+
+    .footer-col p {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.875rem;
+    }
+
+    .footer-col h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+
+    .footer-col a {
+      display: block;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s;
+    }
+
+    .footer-col a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="logo">BRAND EXPAND</a>
+    <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775" class="nav-cta">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>The Brand Expand Blog</h1>
+    <p>Strategies, tips, and insights to help you grow your brand online. No fluff, just what works.</p>
+  </section>
+
+  <!-- BLOG GRID -->
+  <section class="blog-section">
+    <div class="blog-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="e-commerce">E-Commerce</button>
+      <button class="filter-btn" data-filter="paid-ads">Paid Ads</button>
+      <button class="filter-btn" data-filter="email-marketing">Email Marketing</button>
+      <button class="filter-btn" data-filter="strategy">Strategy</button>
+      <button class="filter-btn" data-filter="social-media">Social Media</button>
+      <button class="filter-btn" data-filter="seo">SEO</button>
+      <button class="filter-btn" data-filter="amazon">Amazon</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="analytics">Analytics</button>
+      <button class="filter-btn" data-filter="growth">Growth</button>
+      <button class="filter-btn" data-filter="content">Content</button>
+    </div>
+    <div class="blog-grid">
+
+      <a href="/blog/facebook-ads-not-converting.html" class="blog-card fade-in" data-category="paid-ads">
+        <div class="blog-image">📈</div>
+        <div class="blog-content">
+          <span class="blog-category">Paid Ads</span>
+          <h3>Why Your Facebook Ads Aren't Converting (And How to Fix It)</h3>
+          <p>Most businesses waste money on Meta ads because they skip the fundamentals. Here's the checklist that actually matters.</p>
+          <div class="blog-meta">
+            <span>Dec 5, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/shopify-apps-you-need.html" class="blog-card fade-in stagger-1" data-category="e-commerce">
+        <div class="blog-image">🛒</div>
+        <div class="blog-content">
+          <span class="blog-category">E-Commerce</span>
+          <h3>The Only 5 Shopify Apps You Actually Need</h3>
+          <p>Stop paying for 30 apps. These five will cover 90% of what you need to run a profitable store.</p>
+          <div class="blog-meta">
+            <span>Dec 2, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/welcome-sequence-47k.html" class="blog-card fade-in stagger-2" data-category="email-marketing">
+        <div class="blog-image">📧</div>
+        <div class="blog-content">
+          <span class="blog-category">Email Marketing</span>
+          <h3>The Welcome Sequence That Made Us $47K in 30 Days</h3>
+          <p>A 5-email welcome flow that turns first-time visitors into repeat buyers. Steal the exact template.</p>
+          <div class="blog-meta">
+            <span>Nov 28, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/pick-right-marketing-channel.html" class="blog-card fade-in" data-category="strategy">
+        <div class="blog-image">🎯</div>
+        <div class="blog-content">
+          <span class="blog-category">Strategy</span>
+          <h3>How to Pick the Right Marketing Channel for Your Business</h3>
+          <p>SEO vs Paid Ads vs Social. Here's a framework to decide where to put your time and money.</p>
+          <div class="blog-meta">
+            <span>Nov 24, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/posting-every-day-killing-brand.html" class="blog-card fade-in stagger-1" data-category="social-media">
+        <div class="blog-image">📱</div>
+        <div class="blog-content">
+          <span class="blog-category">Social Media</span>
+          <h3>Posting Every Day is Killing Your Brand</h3>
+          <p>Quality over quantity isn't just a cliche. It's the algorithm's preference. Here's the posting schedule that works.</p>
+          <div class="blog-meta">
+            <span>Nov 19, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/local-seo-2025.html" class="blog-card fade-in stagger-2" data-category="seo">
+        <div class="blog-image">🔍</div>
+        <div class="blog-content">
+          <span class="blog-category">SEO</span>
+          <h3>Local SEO in 2025: What Actually Moves the Needle</h3>
+          <p>Google Business Profile hacks, review strategies, and the on-page basics most local businesses ignore.</p>
+          <div class="blog-meta">
+            <span>Nov 15, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/amazon-ppc-auto-campaigns.html" class="blog-card fade-in" data-category="amazon">
+        <div class="blog-image">💰</div>
+        <div class="blog-content">
+          <span class="blog-category">Amazon</span>
+          <h3>Amazon PPC: How to Stop Bleeding Money on Auto Campaigns</h3>
+          <p>Auto campaigns are easy to set up and easy to lose money on. Here's how to run them profitably.</p>
+          <div class="blog-meta">
+            <span>Nov 10, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/website-3-seconds.html" class="blog-card fade-in stagger-1" data-category="branding">
+        <div class="blog-image">🎨</div>
+        <div class="blog-content">
+          <span class="blog-category">Branding</span>
+          <h3>Your Website Has 3 Seconds. Here's How to Not Blow It.</h3>
+          <p>Above-the-fold design principles that turn bounces into buyers. Real examples included.</p>
+          <div class="blog-meta">
+            <span>Nov 5, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/7-metrics-that-matter.html" class="blog-card fade-in stagger-2" data-category="analytics">
+        <div class="blog-image">📊</div>
+        <div class="blog-content">
+          <span class="blog-category">Analytics</span>
+          <h3>The Only 7 Metrics That Matter for Your Online Business</h3>
+          <p>Forget vanity metrics. Track these numbers weekly and you'll always know where you stand.</p>
+          <div class="blog-meta">
+            <span>Oct 30, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/zero-to-10k-timeline.html" class="blog-card fade-in" data-category="growth">
+        <div class="blog-image">🚀</div>
+        <div class="blog-content">
+          <span class="blog-category">Growth</span>
+          <h3>From $0 to $10K/Month: The Realistic Timeline</h3>
+          <p>What to expect in months 1-3, 3-6, and beyond. No hype, just the work it actually takes.</p>
+          <div class="blog-meta">
+            <span>Oct 25, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/get-reviews-without-begging.html" class="blog-card fade-in stagger-1" data-category="strategy">
+        <div class="blog-image">🤝</div>
+        <div class="blog-content">
+          <span class="blog-category">Service Business</span>
+          <h3>How to Get Reviews Without Begging for Them</h3>
+          <p>A simple system that turns happy customers into 5-star reviews. Automatically.</p>
+          <div class="blog-meta">
+            <span>Oct 20, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/content-calendar-template.html" class="blog-card fade-in stagger-2" data-category="content">
+        <div class="blog-image">✍️</div>
+        <div class="blog-content">
+          <span class="blog-category">Content</span>
+          <h3>The Content Calendar We Use for Every Client</h3>
+          <p>Plan a month of content in one sitting. Download our template and stop scrambling for ideas.</p>
+          <div class="blog-meta">
+            <span>Oct 15, 2025</span>
+            <span class="read-more">Read More →</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="fade-in">Want Results Like These?</h2>
+    <p class="fade-in">Let's talk about how we can help grow your business with a strategy built for results.</p>
+    <a href="https://brandexpand.agencyhandy.com/public-forms/6933030eeeb840ae051edc6a" class="cta-btn fade-in">Get Your Free Review</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>&nbsp;</h4>
+        <a href="/" class="logo">BRAND EXPAND</a>
+        <p>We help brands grow online.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/dtc-brands.html">DTC Brands</a>
+        <a href="/service-businesses.html">Service Businesses</a>
+        <a href="/amazon-sellers.html">Amazon Sellers</a>
+        <a href="/creator-brands.html">Creator Brands</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/case-studies.html">Case Studies</a>
+        <a href="/blog.html">Blog</a>
+        <a href="https://brandexpand.agencyhandy.com/public-forms/693311aaeeb840ae051f1775">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Brand Expand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll animation observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Blog filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const blogCards = document.querySelectorAll('.blog-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        // Filter cards
+        blogCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.classList.remove('hidden');
+            card.classList.add('visible');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
